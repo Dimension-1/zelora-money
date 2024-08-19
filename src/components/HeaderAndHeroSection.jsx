@@ -12,7 +12,7 @@ const HeaderAndHeroSection = () => {
                 <div className="text-red-600 text-4xl font-bold">
                     <img src="/Images/Navbar/Logo.png" alt="Logo" className="h-18 w-18" />
                 </div>
-                <ul className="flex space-x-8 text-white text-lg">
+                <ul className="flex space-x-8 text-white text-lg items-center">
                     <li><a href="#" className="hover:underline">Courses</a></li>
                     <li><a href="#" className="hover:underline">Trade Rooms</a></li>
                     <li><a href="#" className="hover:underline">Community</a></li>

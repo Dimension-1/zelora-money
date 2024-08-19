@@ -19,14 +19,14 @@ const CoursesSection = () => {
       <div className="bg-[#EBEBEB] p-12 max-w-7xl mx-auto mx-8 rounded-2xl">
         {/* Trading Mastery 101 */}
         <div className="mb-12">
-          <div className="flex justify-between items-center mb-8">
-            <h3 className="text-2xl font-bold">Trading Mastery 101</h3>
+          <div className="flex flex-col justify-center items-start mb-8">
+            <h3 className="text-2xl font-bold mb-2">Trading Mastery 101</h3>
             <span className="bg-red-500 text-white px-4 py-2 rounded-full text-sm">
               8 week immersion
             </span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-[#EBEBEB] p-6 rounded-lg hover:shadow-md transition-shadow">
+            <div className="bg-[#D9D9D9] p-6 rounded-lg hover:shadow-md transition-shadow">
               <h4 className="text-lg font-semibold text-blue-600 mb-2">
                 Intraday Trading Bootcamp
               </h4>
@@ -36,7 +36,7 @@ const CoursesSection = () => {
                 traders.
               </p>
             </div>
-            <div className="bg-[#EBEBEB] p-6 rounded-lg hover:shadow-md transition-shadow">
+            <div className="bg-[#D9D9D9] p-6 rounded-lg hover:shadow-md transition-shadow">
               <h4 className="text-lg font-semibold text-blue-600 mb-2">
                 Swing Trading Strategies
               </h4>
@@ -45,7 +45,7 @@ const CoursesSection = () => {
                 and insights for maximizing medium-term gains.
               </p>
             </div>
-            <div className="bg-[#EBEBEB] p-6 rounded-lg hover:shadow-md transition-shadow">
+            <div className="bg-[#D9D9D9] p-6 rounded-lg hover:shadow-md transition-shadow">
               <h4 className="text-lg font-semibold text-blue-600 mb-2">
                 Options Trading Mastery
               </h4>
@@ -54,7 +54,7 @@ const CoursesSection = () => {
                 to advanced strategies for leveraging market movements.
               </p>
             </div>
-            <div className="bg-[#EBEBEB] p-6 rounded-lg hover:shadow-md transition-shadow">
+            <div className="bg-[#D9D9D9] p-6 rounded-lg hover:shadow-md transition-shadow">
               <h4 className="text-lg font-semibold text-blue-600 mb-2">
                 Forex Trading Essentials
               </h4>
