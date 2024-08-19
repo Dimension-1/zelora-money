@@ -21,7 +21,7 @@ const cardsData = [
 
 const CardsSection = () => {
     return (
-        <section className="py-12">
+        <section className="py-12 mx-8">
             <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {cardsData.map(card => (
                     <div key={card.id} className="bg-[#EBEBEB] p-6 rounded-lg shadow-lg flex flex-col items-center">
