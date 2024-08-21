@@ -2,7 +2,7 @@ import React from "react";
 
 const RequestInviteSection = () => {
   return (
-    <section className="bg-[#E94A41] text-white py-8">
+    <section className="bg-[#E94A41] text-white py-8 px-8">
       <div className="mx-auto flex flex-row items-center md:items-center md:justify-between w-full md:max-w-6xl">
         <h2 className="text-3xl font-semibold text-center">
           Request your invite now!

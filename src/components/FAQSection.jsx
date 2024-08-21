@@ -33,14 +33,14 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="bg-black text-white py-16">
+    <section className="bg-black text-white py-16 pt-0">
       <div className="mx-auto flex flex-col items-center md:items-center md:justify-between w-full md:max-w-4xl">
-        <h2 className="text-4xl font-bold text-center mb-8">FAQs</h2>
+        <h2 className="text-4xl font-light text-center mb-8">FAQs</h2>
         <div className="flex justify-center space-x-8 mb-8">
           <button className="text-gray-400 hover:text-white">
             General Queries
           </button>
-          <button className="text-white underline">Community Related</button>
+          <button className="text-white">Community Related</button>
           <button className="text-gray-400 hover:text-white">
             Pricing Plan Related
           </button>
@@ -55,7 +55,7 @@ const FAQSection = () => {
                 className="flex justify-between items-center cursor-pointer"
                 onClick={() => toggleFAQ(index)}
               >
-                <h4 className="text-xl font-semibold">{faq.question}</h4>
+                <h4 className="text-xl font-light">{faq.question}</h4>
                 <span className="text-2xl">
                   {activeIndex === index ? "—" : "+"}
                 </span>

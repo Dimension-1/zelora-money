@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#D9D9D9]">
+    <footer className="bg-[#D9D9D9] px-8">
       <div className="mx-auto flex flex-row items-center md:items-center md:justify-between w-full md:max-w-6xl">
         {/* Logo and Social Icons */}
         <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">

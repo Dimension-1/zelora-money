@@ -1,21 +1,20 @@
 import React from "react";
 
-// Sample data for cards
 const cardsData = [
   {
     id: 1,
     title: "Courses",
-    image: "/Images/Cards/courses.png", // Replace with the correct path
+    image: "/Images/Cards/courses.png", 
   },
   {
     id: 2,
     title: "Trade Rooms",
-    image: "/Images/Cards/trade-rooms.png", // Replace with the correct path
+    image: "/Images/Cards/trade-rooms.png",
   },
   {
     id: 3,
     title: "Community",
-    image: "/Images/Cards/community.png", // Replace with the correct path
+    image: "/Images/Cards/community.png",
   },
 ];
 
@@ -35,7 +34,7 @@ const CardsSection = () => {
                 className="rounded-lg mb-4 w-full h-48 object-cover"
               />
               <div className="flex justify-between items-center w-full mt-4">
-                <h3 className="text-2xl font-bold">{card.title}</h3>
+                <h3 className="text-2xl ">{card.title}</h3>
                 {/* Arrow PNG */}
                 <img
                   src="/Images/Cards/arrow.png"

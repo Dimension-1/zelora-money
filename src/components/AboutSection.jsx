@@ -4,7 +4,7 @@ const AboutSection = () => {
   return (
     <section className="py-24 bg-[#070707] text-white relative">
       <div className="mx-auto flex flex-col md:items-center md:justify-between w-full md:max-w-6xl">
-        <div className="flex justify-center mb-16 px-4 lg:px-0">
+        <div className="flex justify-center px-4 lg:px-0">
           <img
             src="/Images/About/background-image.png"
             alt="Background Drawing"
@@ -19,30 +19,35 @@ const AboutSection = () => {
             className="absolute top-[-20px] left-[-20px] w-24 h-24"
           />
 
-          <h2 className="text-center text-xl font-semibold mb-4">
-            ROADMAP TO SUCCESS
-          </h2>
-          <h3 className="text-center text-3xl font-bold mb-12">
-            How Do You Achieve?
-          </h3>
+          <h2 className="text-center text-xl mb-4">ROADMAP TO SUCCESS</h2>
+          <h3 className="text-center text-5xl">How Do You Achieve?</h3>
 
           <div className="flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 lg:space-x-8 relative">
-            <div className="absolute inset-x-0 top-[50px] lg:top-[50px] h-[2px] bg-blue-500"></div>
+            <div className="absolute inset-x-0 top-[86px] lg:top-[86px] h-[2px] bg-[#4C58F2] max-w-5xl"></div>
 
-            <div className="flex-1 p-6 rounded-lg flex flex-col justify-start relative">
-              <div className="relative z-10">
+            {/* Card 1 */}
+            <div className="flex-1 p-6 rounded-lg flex flex-col justify-start items-start relative">
+              <div className="relative z-10 flex items-center justify-center mb-4">
                 <img
                   src="/Images/About/circle.png"
                   alt="Circle"
-                  className="w-20 h-20"
+                  className="w-20 h-20 relative top-[30px] top-[30px]"
                 />
                 <img
                   src="/Images/About/01.png"
                   alt="01"
-                  className="absolute inset-0 w-10 h-10 m-auto"
+                  className="absolute w-10 h-10"
+                  style={{
+                    top: "86%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                  }}
                 />
               </div>
-              <div className="bg-white text-black p-6 rounded-lg mt-8 shadow-lg">
+              <div
+                className="bg-[#EDEDED] text-black p-6 rounded-lg shadow-lg"
+                style={{ fontFamily: "DM Sans, sans-serif" }}
+              >
                 <h4 className="text-xl font-semibold mb-2">
                   Online Application
                 </h4>
@@ -50,24 +55,33 @@ const AboutSection = () => {
                   Fill out a quick form to share your trading experience, goals,
                   and why you want to join Fino Club.
                 </p>
-                <p className="font-bold">60 seconds</p>
+                <p className="text-[#070707]">60 seconds</p>
               </div>
             </div>
 
-            <div className="flex-1 p-6 rounded-lg flex flex-col items-center text-center relative">
-              <div className="relative z-10">
+            {/* Card 2 */}
+            <div className="flex-1 p-6 rounded-lg flex flex-col justify-start items-start relative">
+              <div className="relative z-10 flex items-center justify-center mb-4">
                 <img
                   src="/Images/About/circle.png"
                   alt="Circle"
-                  className="w-20 h-20"
+                  className="w-20 h-20 relative top-[30px]"
                 />
                 <img
                   src="/Images/About/02.png"
                   alt="02"
-                  className="absolute inset-0 w-10 h-10 m-auto"
+                  className="absolute w-10 h-10"
+                  style={{
+                    top: "86%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                  }}
                 />
               </div>
-              <div className="bg-white text-black p-6 rounded-lg mt-8 shadow-lg">
+              <div
+                className="bg-[#EDEDED] text-black p-6 rounded-lg shadow-lg"
+                style={{ fontFamily: "DM Sans, sans-serif" }}
+              >
                 <h4 className="text-xl font-semibold mb-2">
                   Screening Session
                 </h4>
@@ -75,30 +89,39 @@ const AboutSection = () => {
                   A brief one-on-one call to understand your trading strategies
                   & experience to ensure mutual alignment.
                 </p>
-                <p className="font-bold">15 minutes</p>
+                <p className="text-[#070707]">15 minutes</p>
               </div>
             </div>
 
-            <div className="flex-1 p-6 rounded-lg flex flex-col items-center text-center relative">
-              <div className="relative z-10">
+            {/* Card 3 */}
+            <div className="flex-1 p-6 rounded-lg flex flex-col justify-start items-start relative">
+              <div className="relative z-10 flex items-center justify-center mb-4">
                 <img
                   src="/Images/About/circle.png"
                   alt="Circle"
-                  className="w-20 h-20"
+                  className="w-20 h-20 relative top-[30px]"
                 />
                 <img
                   src="/Images/About/03.png"
                   alt="03"
-                  className="absolute inset-0 w-10 h-10 m-auto"
+                  className="absolute w-10 h-10"
+                  style={{
+                    top: "86%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                  }}
                 />
               </div>
-              <div className="bg-white text-black p-6 rounded-lg mt-8 shadow-lg">
+              <div
+                className="bg-[#EDEDED] text-black p-6 rounded-lg shadow-lg"
+                style={{ fontFamily: "DM Sans, sans-serif" }}
+              >
                 <h4 className="text-xl font-semibold mb-2">Invitation</h4>
                 <p className="text-gray-500 mb-4">
                   Receive your exclusive invite to join Fino Club and access our
                   elite trading community.
                 </p>
-                <p className="font-bold">Within 48 hours</p>
+                <p className="text-[#070707]">Within 48 hours</p>
               </div>
             </div>
           </div>
@@ -106,7 +129,7 @@ const AboutSection = () => {
           <img
             src="/Images/About/hand.png"
             alt="Hand"
-            className="absolute bottom-[-30px] right-[-30px] w-32 h-32"
+            className="absolute bottom-[0px] right-[50px] w-40 h-40"
           />
         </div>
       </div>

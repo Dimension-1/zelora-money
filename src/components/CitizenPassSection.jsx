@@ -4,14 +4,14 @@ const CitizenPassSection = () => {
   const checkmarkIcon = "/Images/CitizenPass/checkmark.svg"; // Replace with the path to your SVG
 
   return (
-    <section className="relative">
+    <section className="relative px-8">
       <div className="mx-auto flex flex-col items-center md:items-center md:justify-center w-full md:max-w-6xl">
         {/* Top half with black background */}
         <div className="text-white py-16">
           <div className="max-w-7xl flex flex-row h-[867px]">
             {/* Left Side - All Access Citizen Pass */}
             <div
-              className="p-8 flex flex-col items-center justify-center relative"
+              className="p-8 flex flex-col items-center justify-center relative w-1/3 rounded-l-lg"
               style={{
                 backgroundImage: `url('/Images/CitizenPass/bg.png')`,
                 backgroundSize: "cover",
@@ -22,21 +22,21 @@ const CitizenPassSection = () => {
               <img
                 src="/Images/CitizenPass/icon.png"
                 alt="Citizen Pass Icon"
-                className="mb-4"
+                className="mb-8 h-auto"
               />
-              <h2 className="text-2xl font-bold mb-4">
+              <h2 className="text-4xl font-light text-center mb-4">
                 An All Access Citizen Pass
               </h2>
-              <p className="mb-4">PRICING AND BENEFITS</p>
+              <p className="text-xl text-center mb-8">PRICING AND BENEFITS</p>
               <img
                 src="/Images/CitizenPass/arrow.png"
                 alt="Arrow"
-                className="bottom-8 left-8"
+                className="absolute bottom-[25%] left-1/2 transform -translate-x-1/2 h-auto"
               />
             </div>
 
             {/* Middle - Pricing Plans */}
-            <div className="flex flex-col justify-center items-center bg-[#EBEBEB]">
+            <div className="flex flex-col justify-center items-center bg-[#EBEBEB] rounded-r-lg">
               <div className="flex  p-8">
                 <div className="bg-white text-black p-8 rounded-lg shadow-lg mr-6 h-[585px]">
                   <h3 className="text-xl font-bold mb-4">Monthly Plan</h3>
@@ -104,38 +104,10 @@ const CitizenPassSection = () => {
 
         {/* Bottom half with white background */}
         <div className="flex flex-col justify-center items-center">
-          <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            {[
-              {
-                name: "- Rajesh K.",
-                title: "Stock Market Enthusiast",
-                img: "/Images/CitizenPass/testimonial1.png",
-              },
-              {
-                name: "- Emily R.",
-                title: "Professional Trader",
-                img: "/Images/CitizenPass/testimonial2.png",
-              },
-              {
-                name: "- Sneha S.",
-                title: "Investment Advisor",
-                img: "/Images/CitizenPass/testimonial3.png",
-              },
-            ].map((testimonial, index) => (
-              <div key={index} className="">
-                <img
-                  src={testimonial.img}
-                  alt={`Testimonial ${index + 1}`}
-                  className="w-full"
-                />
-              </div>
-            ))}
-          </div>
-
           {/* Bottom Illustration */}
           <div className="z-10">
             <img
-              src="/Images/CitizenPass/illustration.png"
+              src="/Images/CitizenPass/illustration1.png"
               alt="Illustration"
               className=""
             />
