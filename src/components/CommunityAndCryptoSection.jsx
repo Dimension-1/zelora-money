@@ -6,16 +6,16 @@ const CommunityAndCryptoSection = () => {
       <div className="mx-auto flex flex-col items-center md:items-center w-full md:max-w-6xl">
         <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Community Card */}
-          <div className="bg-[#EBEBEB] py-8 px-16 rounded-lg shadow-lg relative flex flex-col items-center justify-between">
-            <div className="absolute top-32 xl:-left-24 z-10 xl:w-auto md:w-[250px] md:-left-16">
+          <div className="bg-[#EBEBEB] py-8 px-4 md:px-16 rounded-lg shadow-lg relative flex flex-col items-center justify-between">
+            <div className="absolute top-64 md:top-32 xl:-left-24 z-10 -left-8 xl:w-auto md:w-[250px] md:-left-16">
               <img
                 src="/Images/Community/hand.png"
                 alt="Hand Illustration"
-                className="w-auto"
+                className="w-[200px] md:w-auto"
               />
             </div>
             <div>
-              <h3 className="text-5xl font-bold mb-4 text-center">Community</h3>
+              <h3 className="text-5xl font-light mb-4 text-center">Community</h3>
               <p className="text-lg mb-6 text-center">
                 Become a part of a community of traders and fintech enthusiasts,
                 learn, network, and grow together!
@@ -44,9 +44,9 @@ const CommunityAndCryptoSection = () => {
           </div>
 
           {/* Crypto Card */}
-          <div className="bg-[#EBEBEB] py-8 px-16 rounded-lg shadow-lg relative flex flex-col items-center justify-between">
+          <div className="bg-[#EBEBEB] py-8 px-4 md:px-16 rounded-lg shadow-lg relative flex flex-col items-center justify-between">
             <div>
-              <h3 className="text-5xl font-bold mb-4 text-center">Crypto</h3>
+              <h3 className="text-5xl font-light mb-4 text-center">Crypto</h3>
               <p className="text-lg mb-6 text-center">
                 Stay ahead in the volatile world of cryptocurrencies with expert
                 insights, strategic guidance, and the latest trends.
@@ -61,7 +61,7 @@ const CommunityAndCryptoSection = () => {
               <img
                 src="/Images/Crypto/crypto-icon.png"
                 alt="Crypto Icon"
-                className="absolute -bottom-24 right-32 z-30"
+                className="absolute -bottom-24 right-32 z-30 w-[230px] md:w-auto"
               />
             </div>
             <button className="mt-8 bg-[#4C58F2] hover:bg-blue-700 transition-all duration-300 ease-in-out text-white py-3 px-6 rounded-lg shadow-lg flex items-center justify-center space-x-2">

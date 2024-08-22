@@ -2,7 +2,7 @@ import React from "react";
 
 const VideosToLearnSection = () => {
   return (
-    <section className="py-16 px-8 bg-black">
+    <section className="hidden md:block py-16 px-8 bg-black">
       <div className="mx-auto flex flex-col text-white items-center w-full md:max-w-6xl bg-[#1A1A1A] p-8 rounded-lg">
         <div className="w-full">
           <h2 className="text-5xl font-light mb-8">Videos To Help You Learn</h2>

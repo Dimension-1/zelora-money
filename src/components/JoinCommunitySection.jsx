@@ -3,11 +3,11 @@ import React from "react";
 const JoinCommunitySection = () => {
   return (
     <section
-      className="py-24 bg-red-600 text-white flex flex-col items-center justify-center"
+      className="py-24 bg-red-600 text-white flex flex-col items-center justify-center px-4"
       style={{
         backgroundImage: `url('/Images/Background/pattern.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
       <div className="mx-auto flex flex-col items-center justify-center w-full md:max-w-6xl">
@@ -19,12 +19,12 @@ const JoinCommunitySection = () => {
             <input
               type="email"
               placeholder="Enter your email to receive an invite"
-              className="py-3 px-4 rounded-l-lg text-black outline-none flex-1"
-              style={{ width: '70%' }}
+              className="py-1 md:py-3 px-1 rounded-l-lg text-black outline-none flex-1"
+              style={{ width: "70%" }}
             />
             <button
-              className="bg-[#4C58F2] text-white py-3 px-6 rounded-r-lg hover:bg-blue-700 transition-colors"
-              style={{ width: '30%' }}
+              className="bg-[#4C58F2] text-white py-1 md:py-3 px-6 rounded-r-lg hover:bg-blue-700 transition-colors"
+              style={{ width: "30%" }}
             >
               Become a citizen
             </button>

@@ -33,10 +33,10 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="bg-black text-white py-16 pt-0">
+    <section className="bg-black text-white py-16 pt-4 md:px-8 px-4">
       <div className="mx-auto flex flex-col items-center md:items-center md:justify-between w-full md:max-w-4xl">
         <h2 className="text-4xl font-light text-center mb-8">FAQs</h2>
-        <div className="flex justify-center space-x-8 mb-8">
+        <div className="flex flex-col md:flex-row items-center justify-center md:space-x-8 mb-8">
           <button className="text-gray-400 hover:text-white">
             General Queries
           </button>

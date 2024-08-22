@@ -2,7 +2,7 @@ import React from "react";
 
 const CoursesSection = () => {
   return (
-    <section className="py-16 bg-[#F7F8FA] text-black px-8">
+    <section className="py-16 bg-[#F7F8FA] text-black px-4 md:px-8">
       <div className="mx-auto flex flex-col items-center md:items-center md:justify-center w-full md:max-w-6xl">
         {/* Header Section */}
         <div className="text-center mb-16 flex flex-col items-center">
@@ -26,23 +26,29 @@ const CoursesSection = () => {
 
         {/* Main Content Area */}
         <div
-          className="bg-[#EBEBEB] p-12 max-w-7xl mx-auto mx-8 rounded-2xl relative"
+          className="bg-[#EBEBEB] p-6 md:p-12 max-w-7xl mx-auto mx-8 rounded-2xl relative"
           style={{ fontFamily: "DM Sans, sans-serif" }}
         >
           {/* Trading Mastery 101 */}
           <div className="mb-12 ">
-            <div className="flex flex-col justify-center items-start mb-16 mt-4">
-              <h3 className="text-4xl font-bold mb-2">Trading Mastery 101</h3>
+            <div className="flex flex-col justify-center items-start mb-8 md:mb-16 mt-4">
+              <h3 className="text-2xl md:text-4xl font-bold mb-2">
+                Trading Mastery 101
+              </h3>
               <span className="bg-[#E94A41] text-white px-6 py-2 rounded-full text-sm">
                 8 week immersion
               </span>
               <img
                 src="/Images/Courses/artboard.png"
-                className="absolute right-0 w-1/3 top-[-120px]"
+                className="hidden md:block absolute right-0 w-1/3 top-[-120px]"
+              />
+              <img
+                src="/Images/Courses/artboard.png"
+                className="block md:hidden relative"
               />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="bg-[#D9D9D9] p-6 rounded-lg hover:shadow-md transition-shadow">
+              <div className="bg-[#D9D9D9] p-4 rounded-lg hover:shadow-md transition-shadow">
                 <h4
                   className="text-lg font-semibold italic text-[#4C58F2] mb-2"
                   style={{ fontFamily: "RecifeDisplay, sans-serif" }}
@@ -55,7 +61,7 @@ const CoursesSection = () => {
                   traders.
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] p-6 rounded-lg hover:shadow-md transition-shadow">
+              <div className="bg-[#D9D9D9] p-4 rounded-lg hover:shadow-md transition-shadow">
                 <h4
                   className="text-lg font-semibold italic text-[#4C58F2] mb-2"
                   style={{ fontFamily: "RecifeDisplay, sans-serif" }}
@@ -67,7 +73,7 @@ const CoursesSection = () => {
                   and insights for maximizing medium-term gains.
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] p-6 rounded-lg hover:shadow-md transition-shadow">
+              <div className="bg-[#D9D9D9] p-4 rounded-lg hover:shadow-md transition-shadow">
                 <h4
                   className="text-lg font-semibold italic text-[#4C58F2] mb-2"
                   style={{ fontFamily: "RecifeDisplay, sans-serif" }}
@@ -80,7 +86,7 @@ const CoursesSection = () => {
                   movements.
                 </p>
               </div>
-              <div className="bg-[#D9D9D9] p-6 rounded-lg hover:shadow-md transition-shadow">
+              <div className="bg-[#D9D9D9] p-4 rounded-lg hover:shadow-md transition-shadow">
                 <h4
                   className="text-lg font-semibold italic text-[#4C58F2] mb-2"
                   style={{ fontFamily: "RecifeDisplay, sans-serif" }}
@@ -97,7 +103,7 @@ const CoursesSection = () => {
 
           {/* Self-Paced Learning Module */}
           <div className="flex flex-col lg:flex-row gap-8">
-            <div className="lg:w-2/5 p-6 ">
+            <div className="lg:w-2/5 p-0 md:p-6 ">
               <h3 className="text-2xl font-bold mb-6">
                 Self-Paced Learning Module
               </h3>
@@ -144,7 +150,7 @@ const CoursesSection = () => {
                 <h4 className="text-2xl font-bold mb-6 text-left">
                   Mentored by Experts
                 </h4>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {[
                     {
                       name: "Chandrakant Sharma",
@@ -168,20 +174,22 @@ const CoursesSection = () => {
                   ].map((mentor, index) => (
                     <div
                       key={index}
-                      className="bg-[#EBEBEB] pb-4 transition-shadow text-center relative"
+                      className={`bg-[#EBEBEB] pb-4 transition-shadow text-center relative ${
+                        index === 2 ? "hidden md:block" : ""
+                      }`}
                     >
                       <div className="mx-auto overflow-hidden mb-2">
                         <img
                           src={mentor.image}
                           alt={mentor.name}
-                          className="w-full h-full object-cover"
+                          className="w-[120px] md:w-full md:h-full object-cover"
                         />
                       </div>
                       <div className="px-2">
-                        <p className="font-semibold text-lg text-black">
+                        <p className="font-semibold text-sm md:text-lg text-black">
                           {mentor.name}
                         </p>
-                        <p className="text-sm text-blakc">{mentor.title}</p>
+                        <p className="text-xs text-black">{mentor.title}</p>
                         <p className="text-xs text-black">
                           {mentor.experience}
                         </p>

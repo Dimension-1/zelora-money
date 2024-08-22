@@ -8,7 +8,12 @@ const AboutSection = () => {
           <img
             src="/Images/About/background-image.png"
             alt="Background Drawing"
-            className="w-full max-w-4xl"
+            className="w-full hidden md:block max-w-4xl"
+          />
+          <img
+            src="/Images/About/background-image-mobile.png"
+            alt="Background Drawing"
+            className="w-full max-w-4xl block md:hidden"
           />
         </div>
 
@@ -19,19 +24,21 @@ const AboutSection = () => {
             className="absolute top-[-20px] left-[-20px] w-24 h-24"
           />
 
-          <h2 className="text-center text-xl mb-4">ROADMAP TO SUCCESS</h2>
-          <h3 className="text-center text-5xl">How Do You Achieve?</h3>
+          <h2 className="text-center text-md md:text-xl mb-4">ROADMAP TO SUCCESS</h2>
+          <h3 className="text-center text-4xl md:text-5xl">How Do You Achieve?</h3>
 
           <div className="flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 lg:space-x-8 relative">
-            <div className="absolute inset-x-0 top-[86px] lg:top-[86px] h-[2px] bg-[#4C58F2] max-w-5xl"></div>
+            <div
+              className="absolute inset-y-0 top-[10%] left-[12%] md:left-[50%] h-[700px] md:h-full w-[2px] bg-[#4C58F2] max-h-full"
+            ></div>
 
             {/* Card 1 */}
-            <div className="flex-1 p-6 rounded-lg flex flex-col justify-start items-start relative">
+            <div className="flex-1 p-0 md:p-6 rounded-lg flex flex-col justify-start items-start relative">
               <div className="relative z-10 flex items-center justify-center mb-4">
                 <img
                   src="/Images/About/circle.png"
                   alt="Circle"
-                  className="w-20 h-20 relative top-[30px] top-[30px]"
+                  className="w-20 h-20 relative top-[30px]"
                 />
                 <img
                   src="/Images/About/01.png"
@@ -60,7 +67,7 @@ const AboutSection = () => {
             </div>
 
             {/* Card 2 */}
-            <div className="flex-1 p-6 rounded-lg flex flex-col justify-start items-start relative">
+            <div className="flex-1 p-0 md:p-6 rounded-lg flex flex-col justify-start items-start relative">
               <div className="relative z-10 flex items-center justify-center mb-4">
                 <img
                   src="/Images/About/circle.png"
@@ -94,7 +101,7 @@ const AboutSection = () => {
             </div>
 
             {/* Card 3 */}
-            <div className="flex-1 p-6 rounded-lg flex flex-col justify-start items-start relative">
+            <div className="flex-1 p-0 md:p-6 rounded-lg flex flex-col justify-start items-start relative">
               <div className="relative z-10 flex items-center justify-center mb-4">
                 <img
                   src="/Images/About/circle.png"
@@ -129,7 +136,7 @@ const AboutSection = () => {
           <img
             src="/Images/About/hand.png"
             alt="Hand"
-            className="absolute bottom-[0px] right-[50px] w-40 h-40"
+            className="absolute bottom-[0px] right-[0] md:right-[50px] w-40 h-40"
           />
         </div>
       </div>

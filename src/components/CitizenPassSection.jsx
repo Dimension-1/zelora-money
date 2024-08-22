@@ -4,14 +4,14 @@ const CitizenPassSection = () => {
   const checkmarkIcon = "/Images/CitizenPass/checkmark.svg"; // Replace with the path to your SVG
 
   return (
-    <section className="relative px-8">
+    <section className="relative px-4 md:px-8 overflow-hidden">
       <div className="mx-auto flex flex-col items-center md:items-center md:justify-center w-full md:max-w-6xl">
         {/* Top half with black background */}
         <div className="text-white py-16">
-          <div className="max-w-7xl flex flex-row h-[867px]">
+          <div className="max-w-7xl flex flex-col md:flex-row md:h-[867px] rounded mx-4">
             {/* Left Side - All Access Citizen Pass */}
             <div
-              className="p-8 flex flex-col items-center justify-center relative w-1/3 rounded-l-lg"
+              className="py-10 px-0 md:p-8 flex flex-col items-center justify-be relative md:w-1/3 rounded-t-lg md:rounded-l-lg"
               style={{
                 backgroundImage: `url('/Images/CitizenPass/bg.png')`,
                 backgroundSize: "cover",
@@ -31,14 +31,14 @@ const CitizenPassSection = () => {
               <img
                 src="/Images/CitizenPass/arrow.png"
                 alt="Arrow"
-                className="absolute bottom-[25%] left-1/2 transform -translate-x-1/2 h-auto"
+                className="absolute bottom-[5%] md:bottom-[25%] left-1/2 transform -translate-x-1/2 h-auto"
               />
             </div>
 
             {/* Middle - Pricing Plans */}
-            <div className="flex flex-col justify-center items-center bg-[#EBEBEB] rounded-r-lg">
-              <div className="flex  p-8">
-                <div className="bg-white text-black p-8 rounded-lg shadow-lg mr-6 h-[585px]">
+            <div className="flex flex-col  bg-[#EBEBEB] rounded-b-lg md:rounded-r-lg">
+              <div className="flex flex-col justify-center items-center p-4 md:p-8">
+                <div className="bg-white text-black p-8 rounded-lg shadow-lg mr-0 mb-4 md:mb-0 md:mr-6 md:h-[585px]">
                   <h3 className="text-xl font-bold mb-4">Monthly Plan</h3>
                   <p className="text-2xl font-bold mb-4">$36/month</p>
                   <ul className="space-y-2 mb-8">
@@ -64,7 +64,7 @@ const CitizenPassSection = () => {
                   </ul>
                 </div>
 
-                <div className="bg-white text-black p-8 border border-[#E94A41] rounded-lg shadow-lg relative h-[694px]">
+                <div className="relative bg-white text-black p-8 border border-[#E94A41] rounded-lg shadow-lg relative h-[694px]">
                   <div className="absolute top-11 right-4 bg-white text-[#E94A41] border border-[#E94A41] py-1 px-4 rounded-lg">
                     30% OFF
                   </div>
@@ -94,22 +94,28 @@ const CitizenPassSection = () => {
                     ))}
                   </ul>
                 </div>
-              </div>
-              <button className="bg-blue-600 text-white text-sm py-2 px-6 rounded-lg">
+                <button className="bg-[#4C58F2] text-white text-sm py-2 px-6 mt-4 rounded-lg">
                 Become a citizen
               </button>
+              </div>
+              
             </div>
           </div>
         </div>
 
         {/* Bottom half with white background */}
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center relative">
           {/* Bottom Illustration */}
           <div className="z-10">
             <img
               src="/Images/CitizenPass/illustration1.png"
               alt="Illustration"
-              className=""
+              className="hidden md:block"
+            />
+            <img
+              src="/Images/CitizenPass/illustration1-mobile.png"
+              alt="Illustration"
+              className="relative block md:hidden"
             />
           </div>
         </div>

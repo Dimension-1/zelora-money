@@ -8,16 +8,17 @@ const OurValuesAndStories = () => {
     title1: "AVP Project",
     title2: "Program Management at StateStreet",
     arrows: "/Images/Stories/arrows.png",
+    arrowsMobile: "/Images/Stories/arrows-mobile.png",
     image: "/Images/Stories/blessen.png",
     memberSince: "/Images/Stories/memberSince.png",
     speechBubbles: "/Images/Stories/colon.png",
   };
 
   return (
-    <section className="bg-black text-white px-8">
+    <section className="bg-black text-white px-4 md:px-8 overflow-hidden">
       <div className="mx-auto flex flex-col items-start justify-center items-center w-full md:max-w-6xl">
         {/* 4 Pillars of Foundation */}
-        <div className="py-24 relative">
+        <div className="py-16 md:py-24 relative">
           <div className="text-center mb-24 relative">
             <h2
               className="text-xl font-normal mb-4"
@@ -31,13 +32,13 @@ const OurValuesAndStories = () => {
             <img
               src="/Images/Values/overlay.png"
               alt="Foundation Overlay"
-              className="absolute lg:right-[9%] top-[70%] xl:right-[12%] transform -translate-x-1/2 -translate-y-1/2 w-[25%]"
+              className="absolute top-[70px] lg:right-[9%] md:top-[70%] xl:right-[12%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:w-[25%]"
             />
           </div>
 
           {/* Individual Pillars */}
           <div
-            className="flex justify-between space-x-16 items-end"
+            className="flex flex-col md:flex-row justify-between md:space-x-16 space-y-14 md:space-y-0 items-end"
             style={{ fontFamily: "DM Sans" }}
           >
             {/* Pillar 1 */}
@@ -119,25 +120,30 @@ const OurValuesAndStories = () => {
         </div>
 
         {/* Featured Trader Stories */}
-        <div className="bg-[#1A1A1A] p-12 rounded-lg max-w-7xl mx-auto mb-16">
-          <div className="relative text-center mb-16">
+        <div className="bg-[#1A1A1A] p-4 md:p-12 rounded-lg max-w-7xl mx-auto mb-16">
+          <div className="relative text-center md:mb-16">
             <h2
-              className="text-xl font-normal mb-4"
+              className="text-md md:text-xl font-normal mb-4"
               style={{ fontFamily: "DM Sans" }}
             >
               FEATURED TRADER STORIES
             </h2>
-            <h3 className="text-5xl font-normal mb-12 relative inline-block">
+            <h3 className="text-4xl md:text-5xl font-normal mb-12 relative inline-block">
               People Who Grew With Us
             </h3>
             <img
               src={stories.arrows}
               alt="Arrows"
-              className="absolute -top-[20px] right-[19%] max-w-2xl"
+              className="absolute hidden md:block -top-[20px] right-[19%] max-w-2xl"
+            />
+            <img
+              src={stories.arrowsMobile}
+              alt="Arrows"
+              className="absolute block md:hidden top-[65px]"
             />
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div className="p-8 rounded-lg h-full flex flex-col justify-center">
+            <div className="order-2 lg:order-1 md:p-8 rounded-lg h-full flex flex-col justify-center">
               <p
                 className="text-3xl mb-8 font-extralight"
                 style={{ fontFamily: "DM Sans", fontWeight: 100 }}
@@ -163,7 +169,7 @@ const OurValuesAndStories = () => {
                 {stories.title2}
               </p>
             </div>
-            <div className="relative h-full flex items-center justify-center">
+            <div className="order-1 lg:order-2 relative h-full flex items-center justify-center">
               <img
                 src={stories.image}
                 alt={stories.name}
@@ -172,12 +178,12 @@ const OurValuesAndStories = () => {
               <img
                 src={stories.speechBubbles}
                 alt="Speech Bubbles"
-                className="absolute -top-14 right-10 w-44 h-auto"
+                className="absolute -top-14 right-0 md:right-10 w-44 h-auto"
               />
               <img
                 src={stories.memberSince}
                 alt="Fino Club Member Since 2023"
-                className="absolute -bottom-6 left-4 w-48 h-auto"
+                className="absolute -bottom-6 left-0 md:left-4 w-48 h-auto"
               />
             </div>
           </div>
