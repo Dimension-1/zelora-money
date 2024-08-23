@@ -162,19 +162,19 @@ const CoursesSection = () => {
                       name: "Abhimanyu Kucheria",
                       title: "Partner & Fund Manager",
                       experience: "Second Street Partners",
-                      image: "/Images/Courses/expert2.png",
+                      image: "/Images/Courses/expert3.png",
                     },
                     {
                       name: "Pratik Patil",
                       title: "Proprietary Trader & CMT II",
                       experience: "4Y+ Full-time Prop trader",
-                      image: "/Images/Courses/expert3.png",
+                      image: "/Images/Courses/expert2.png",
                       withIcon: true,
                     },
                   ].map((mentor, index) => (
                     <div
                       key={index}
-                      className={`bg-[#EBEBEB] pb-4 transition-shadow text-center relative ${
+                      className={`bg-[#EBEBEB] pb-4 transition-shadow flex flex-col justify-items-center text-center relative ${
                         index === 2 ? "hidden md:block" : ""
                       }`}
                     >
@@ -185,8 +185,8 @@ const CoursesSection = () => {
                           className="w-[120px] md:w-full md:h-full object-cover"
                         />
                       </div>
-                      <div className="px-2">
-                        <p className="font-semibold text-sm md:text-lg text-black">
+                      <div className="px-2 flex flex-col justify-center items-between">
+                        <p className="font-semibold text-xs md:text-xl text-black">
                           {mentor.name}
                         </p>
                         <p className="text-xs text-black">{mentor.title}</p>
