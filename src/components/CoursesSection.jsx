@@ -150,7 +150,7 @@ const CoursesSection = () => {
                 <h4 className="text-2xl font-bold mb-6 text-left">
                   Mentored by Experts
                 </h4>
-                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
                   {[
                     {
                       name: "Chandrakant Sharma",
@@ -169,7 +169,6 @@ const CoursesSection = () => {
                       title: "Proprietary Trader & CMT II",
                       experience: "4Y+ Full-time Prop trader",
                       image: "/Images/Courses/expert2.png",
-                      withIcon: true,
                     },
                   ].map((mentor, index) => (
                     <div

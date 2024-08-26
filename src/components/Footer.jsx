@@ -21,7 +21,7 @@ const Footer = () => {
               <img src="/Images/Footer/twitter.png" alt="Twitter" />
             </a>
             <a href="#" aria-label="LinkedIn">
-              <img src="/Images/Footer/linkedin.png" alt="LinkedIn" />
+              <img src="/Images/Footer/linkedIn.png" alt="LinkedIn" />
             </a>
           </div>
         </div>

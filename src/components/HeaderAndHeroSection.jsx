@@ -14,11 +14,13 @@ const HeaderAndHeroSection = () => {
         backgroundImage: `url('/Images/Navbar/Bg.png')`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
+        width: "100vw",
+        height: "100vh",
       }}
     >
-      <div className="mx-auto flex flex-col items-center md:items-center md:justify-between w-full md:max-w-6xl relative h-full">
+      <div className="mx-auto flex flex-col items-center justify-center w-full md:max-w-6xl relative h-full">
         {/* Navbar */}
-        <nav className="flex justify-between items-center px-6 pl-0 w-full">
+        <nav className="flex justify-between items-center px-6 pl-0 w-full absolute top-0">
           <div className="text-red-600 text-4xl font-bold">
             <img
               src="/Images/Navbar/Logo.png"
@@ -27,7 +29,7 @@ const HeaderAndHeroSection = () => {
             />
           </div>
           <ul
-            className="hidden md:flex space-x-8 text-white text-lg items-center"
+            className="hidden lg:flex space-x-8 text-white text-lg items-center"
             style={{ fontFamily: "RecifeDisplay" }}
           >
             <li>
@@ -55,7 +57,7 @@ const HeaderAndHeroSection = () => {
             </button>
           </ul>
           {/* Mobile menu */}
-          <div className="flex md:hidden items-center space-x-4">
+          <div className="flex lg:hidden items-center space-x-4">
             <button className="bg-[#4C58F2] text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
               Become a citizen
             </button>
@@ -83,7 +85,7 @@ const HeaderAndHeroSection = () => {
 
         {/* Mobile Menu Dropdown */}
         {isMenuOpen && (
-          <ul className="flex flex-col items-center space-y-4 mt-4 text-white text-lg md:hidden">
+          <ul className="flex flex-col items-center space-y-4 mt-4 text-white text-lg lg:hidden">
             <li>
               <a href="#" className="hover:underline">
                 Courses
@@ -111,7 +113,7 @@ const HeaderAndHeroSection = () => {
         <div className="flex flex-col items-center justify-center text-center px-6 py-12 h-full relative">
           <h1
             className="text-5xl md:text-6xl xl:text-7xl font-semibold leading-tight relative"
-            style={{ fontFamily: "RecifeDisplay", fontWeight: 400 }}
+            style={{ fontFamily: "RecifeDisplay", fontWeight: 400, backdropFilter: "brightness(70%)" }}
           >
             Be a part of the <br />
             <span className="relative">
@@ -127,7 +129,7 @@ const HeaderAndHeroSection = () => {
           <img
             src="/Images/Navbar/hand-mobile.png"
             alt="Hand pointing"
-            className="block md:hidden relative w-auto h-auto transform"
+            className="block lg:hidden relative w-auto h-auto transform"
           />
           <div className="mt-6 flex flex-col md:flex-row items-center">
             <input
@@ -145,7 +147,7 @@ const HeaderAndHeroSection = () => {
       <img
         src="/Images/Navbar/hand.png"
         alt="Hand pointing"
-        className="hidden md:block absolute w-auto h-auto top-[280px] transform"
+        className="hidden lg:block absolute w-auto h-auto top-[50%] left-0 transform -translate-y-1/2"
       />
     </section>
   );
