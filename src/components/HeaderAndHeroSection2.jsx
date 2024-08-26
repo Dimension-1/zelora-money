@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 const HeaderAndHeroSection = () => {
-
   return (
     <section
       className="bg-cover bg-center text-white min-h-screen relative"
@@ -9,6 +8,8 @@ const HeaderAndHeroSection = () => {
         backgroundImage: `url('/Images/Navbar/Bg.png')`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
+        width: "100vw",
+        height: "100vh",
       }}
     >
       <div className="mx-auto flex flex-col items-center md:items-center md:justify-between w-full md:max-w-6xl relative h-full">
@@ -25,11 +26,11 @@ const HeaderAndHeroSection = () => {
 
         {/* Hero Section */}
         <div className="flex flex-col items-center justify-center text-center px-6 pb-12 pt-32 h-full relative">
-        <img
-                src="/Images/Navbar/coming-soon.png"
-                alt="Underline"
-                className="absolute -top-12 md:-top-32"
-              />
+          <img
+            src="/Images/Navbar/coming-soon.png"
+            alt="Underline"
+            className="absolute -top-12 md:-top-32"
+          />
           <h1
             className="text-5xl md:text-6xl xl:text-7xl font-semibold leading-tight relative"
             style={{ fontFamily: "RecifeDisplay", fontWeight: 400 }}
@@ -66,7 +67,7 @@ const HeaderAndHeroSection = () => {
       <img
         src="/Images/Navbar/hand.png"
         alt="Hand pointing"
-        className="hidden md:block absolute w-auto h-auto top-[280px] transform"
+        className="hidden lg:block absolute w-auto h-auto top-[50%] left-0 transform -translate-y-1/2"
       />
     </section>
   );
