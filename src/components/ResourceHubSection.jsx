@@ -17,17 +17,17 @@ const ResourceHubSection = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const articles = [
@@ -98,7 +98,7 @@ const ResourceHubSection = () => {
           {articles.map((article, index) => (
             <div
               key={index}
-              className="bg-[#1A1A1A] rounded-lg shadow-lg overflow-hidden mx-2"
+              className="bg-[#1A1A1A] rounded-lg shadow-lg overflow-hidden mx-6"
             >
               <img
                 src={article.image}

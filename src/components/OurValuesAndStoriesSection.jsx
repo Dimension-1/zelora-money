@@ -7,7 +7,7 @@ const OurValuesAndStories = () => {
     name: "Blessen George",
     title1: "AVP Project",
     title2: "Program Management at StateStreet",
-    arrows: "/Images/Stories/arrows.png",
+    arrows: "/Images/Stories/Arrows.png",
     arrowsMobile: "/Images/Stories/arrows-mobile.png",
     image: "/Images/Stories/blessen.png",
     memberSince: "/Images/Stories/memberSince.png",
