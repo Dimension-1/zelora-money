@@ -75,7 +75,7 @@ const AboutSection = () => {
             <div className="flex-1 p-0 md:p-6 rounded-lg flex flex-col justify-start items-start relative">
               <div className="relative z-10 flex items-center justify-center mb-4">
                 <img
-                  src="/Images/About/circle.png"
+                  src="/Images/About/Circle.png"
                   alt="Circle"
                   className="w-20 h-20 relative top-[30px]"
                 />
@@ -109,7 +109,7 @@ const AboutSection = () => {
             <div className="flex-1 p-0 md:p-6 rounded-lg flex flex-col justify-start items-start relative">
               <div className="relative z-10 flex items-center justify-center mb-4">
                 <img
-                  src="/Images/About/circle.png"
+                  src="/Images/About/Circle.png"
                   alt="Circle"
                   className="w-20 h-20 relative top-[30px]"
                 />
