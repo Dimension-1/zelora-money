@@ -4,6 +4,7 @@ const HeaderAndHeroSection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
+    console.log("Menu button clicked"); // Debugging: log when the button is clicked
     setIsMenuOpen(!isMenuOpen);
   };
 
@@ -64,6 +65,7 @@ const HeaderAndHeroSection = () => {
             <button
               className="text-white text-2xl"
               onClick={toggleMenu}
+              style={{ zIndex: 9999, position: "relative" }} // Adjust the z-index and position
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +87,8 @@ const HeaderAndHeroSection = () => {
 
         {/* Mobile Menu Dropdown */}
         {isMenuOpen && (
-          <ul className="flex flex-col items-center space-y-4 mt-4 text-white text-lg lg:hidden">
+          <div className="absolute top-16 left-0 w-full bg-black text-white flex flex-col items-center space-y-4 py-4 z-10 mt-2">
+            <ul className="text-center space-y-4">
             <li>
               <a href="#" className="hover:underline">
                 Courses
@@ -107,13 +110,18 @@ const HeaderAndHeroSection = () => {
               </a>
             </li>
           </ul>
+          </div>
         )}
 
         {/* Hero Section */}
         <div className="flex flex-col items-center justify-center text-center px-6 py-12 h-full relative">
           <h1
             className="text-5xl md:text-6xl xl:text-7xl font-semibold leading-tight relative"
-            style={{ fontFamily: "RecifeDisplay", fontWeight: 400, backdropFilter: "brightness(70%)" }}
+            style={{
+              fontFamily: "RecifeDisplay",
+              fontWeight: 400,
+              backdropFilter: "brightness(70%)",
+            }}
           >
             Be a part of the <br />
             <span className="relative">
