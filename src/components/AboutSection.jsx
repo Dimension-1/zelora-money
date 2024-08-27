@@ -29,11 +29,11 @@ const AboutSection = () => {
 
           <div className="flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 lg:space-x-8 relative">
             <div
-              className="block md:hidden absolute inset-y-0 top-[10%] left-[12%] md:left-[50%] h-[700px] md:h-full w-[2px] bg-[#4C58F2] max-h-full"
+              className="block lg:hidden absolute inset-y-0 top-[10%] left-[12%] md:left-[9%] h-[700px] md:h-full w-[2px] bg-[#4C58F2] max-h-full"
             ></div>
           
             <div
-              className="hidden md:block absolute inset-x-0 top-[86px] lg:top-[86px] h-[2px] bg-[#4C58F2] max-w-5xl"
+              className="hidden lg:block absolute inset-x-0 top-[86px] lg:top-[86px] h-[2px] bg-[#4C58F2] max-w-5xl"
               style={{ transform: "rotate(180deg)" }}
             ></div>
 
