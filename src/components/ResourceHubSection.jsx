@@ -64,12 +64,12 @@ const ResourceHubSection = () => {
           className="relative block md:hidden top-[-50px] right-0 h-auto md:w-[200px]"
         />
         <h2 className="text-5xl font-normal mb-4 text-center">Resource Hub</h2>
-        <p className="text-lg mb-8 text-center max-w-2xl">
+        <p className="text-lg mb-8 text-center font-light max-w-2xl" style={{ fontFamily: "DM Sans, sans-serif" }}>
           Find blogs, articles, videos, and tutorials, all for free, to help you
           learn at your own pace and upskill.
         </p>
         <button className="mb-10 bg-[#4C58F2] hover:bg-blue-700 transition-all duration-300 ease-in-out text-white py-2 px-6 rounded-lg shadow-lg flex items-center justify-center space-x-2">
-          <span>Explore</span>
+          <span style={{ fontFamily: "DM Sans, sans-serif" }}>Explore</span>
           <img
             src="/Images/Icons/ArrowRight.png"
             alt="Arrow Right"
@@ -78,7 +78,7 @@ const ResourceHubSection = () => {
         </button>
 
         {/* Navigation Tabs */}
-        <div className="flex justify-center space-x-8 text-lg mb-8">
+        <div className="flex justify-center space-x-8 text-lg mb-8" style={{ fontFamily: "DM Sans, sans-serif" }}>
           <a href="#" className="text-gray-400 hover:text-white">
             Blogs
           </a>
@@ -105,7 +105,7 @@ const ResourceHubSection = () => {
                 alt={article.title}
                 className="w-full h-56 object-cover"
               />
-              <div className="p-6">
+              <div className="p-6" style={{ fontFamily: "DM Sans, sans-serif" }}>
                 {article.featured && (
                   <span className="text-sm font-light border px-2 py-1 rounded-lg border-[#E94A41] text-[#E94A41] uppercase mb-2 inline-block">
                     Featured

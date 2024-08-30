@@ -26,7 +26,7 @@ const CitizenPassSection = () => {
             {/* Left Side - All Access Citizen Pass */}
             
             <div
-              className="py-10 p-2 md:p-8 flex flex-col items-center md:justify-center relative md:w-1/3 rounded-t-lg md:rounded-l-lg"
+              className="py-10 p-2 md:p-8 flex flex-col items-center md:justify-center relative md:w-1/3 rounded-t-lg md:rounded-l-lg md:rounded-r-none"
               style={{
                 backgroundImage: `url('/Images/CitizenPass/bg.png')`,
                 backgroundSize: "cover",
@@ -39,10 +39,10 @@ const CitizenPassSection = () => {
                 alt="Citizen Pass Icon"
                 className="mb-8 h-auto"
               />
-              <h2 className="text-4xl font-light text-center mb-4">
+              <h2 className="text-4xl font-base text-center mb-4">
                 An All Access Citizen Pass
               </h2>
-              <p className="text-xl text-center mb-8">PRICING AND BENEFITS</p>
+              <p className="text-sm md:text-xl text-center mb-8" style={{fontFamily: "DM Sans, sans-serif"}}>PRICING AND BENEFITS</p>
               <img
                 src="/Images/CitizenPass/arrow.png"
                 alt="Arrow"
@@ -51,11 +51,11 @@ const CitizenPassSection = () => {
             </div>
 
             {/* Middle - Pricing Plans */}
-            <div className="flex flex-col lg:items-center bg-[#EBEBEB] rounded-b-lg md:rounded-r-lg pb-4">
+            <div className="flex flex-col lg:items-center bg-[#EBEBEB] rounded-b-lg md:rounded-r-lg pb-4" style={{fontFamily: "DM Sans, sans-serif"}}>
               <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start p-4 md:p-8">
                 <div className="bg-white text-black p-8 rounded-lg shadow-lg mr-0 mb-4 md:mb-0 lg:mr-6">
-                  <h3 className="text-xl font-bold mb-4">Monthly Plan</h3>
-                  <p className="text-2xl font-bold mb-4">$36/month</p>
+                  <h3 className="text-base font-light text-[#808080] mb-2">Monthly Plan</h3>
+                  <p className="text-2xl font-semibold mb-4">$36/month</p>
                   <ul className="space-y-2 mb-8">
                     {[
                       "Clear defined trading outcomes",
@@ -71,7 +71,7 @@ const CitizenPassSection = () => {
                         <img
                           src={checkmarkIcon}
                           alt="Checkmark"
-                          className="w-5 h-5 mr-2"
+                          className="w-5 h-auto mr-2"
                         />
                         {item}
                       </li>
@@ -83,7 +83,7 @@ const CitizenPassSection = () => {
                   <div className="absolute top-11 right-4 bg-white text-[#E94A41] border border-[#E94A41] py-1 px-4 rounded-lg">
                     30% OFF
                   </div>
-                  <h3 className="text-xl font-bold mb-4">Yearly Plan</h3>
+                  <h3 className="text-base font-light text-[#808080] mb-2">Yearly Plan</h3>
                   <p className="text-2xl font-bold mb-4">$290/year</p>
                   <ul className="space-y-2 mb-8">
                     {yearlyPlanItems.map((item, index) => (
@@ -91,7 +91,7 @@ const CitizenPassSection = () => {
                         <img
                           src={item.icon}
                           alt={item.text}
-                          className="w-5 h-5 mr-2"
+                          className="w-5 h-auto mr-2"
                         />
                         {item.text}
                       </li>

@@ -2,11 +2,19 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#D9D9D9] py-8 md:px-8 relative">
+    <footer
+      className="bg-[#D9D9D9] py-8 pt-0 md:px-8 relative"
+      style={{ fontFamily: "DM Sans, sans-serif" }}
+    >
       <div className="mx-auto flex flex-col md:flex-row items-center md:justify-between w-full md:max-w-6xl">
         {/* Logo and Social Icons */}
         <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
-          <img src="/Images/Footer/logo.png" alt="Logo" className="absolute -top-4 md:relative w-40 md:mb-4" />
+          {/* Logo with Responsive Sizing */}
+          <img
+            src="/Images/Footer/logo.png"
+            alt="Logo"
+            className="absolute -top-4 md:static w-40 md:w-60" // Increased logo size on larger screens
+          />
           <div className="hidden md:flex space-x-4 mt-4">
             <a href="#" aria-label="Facebook">
               <img src="/Images/Footer/facebook.png" alt="Facebook" />
@@ -28,9 +36,10 @@ const Footer = () => {
 
         {/* Footer Links */}
         <div className="grid grid-cols-2 gap-x-8 gap-y-4 md:flex md:space-x-16 w-full md:w-auto md:mt-0 mt-16">
+          {/* Legal Links */}
           <div className="text-left ml-4">
             <h5 className="font-bold mb-4">LEGAL</h5>
-            <ul className="space-y-2">
+            <ul className="space-y-2 font-light">
               <li>
                 <a href="#" className="text-gray-700 hover:text-gray-900">
                   Terms of Use
@@ -54,9 +63,10 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Company Links */}
           <div className="text-left ml-4">
             <h5 className="font-bold mb-4">COMPANY</h5>
-            <ul className="space-y-2">
+            <ul className="space-y-2 font-light">
               <li>
                 <a href="#" className="text-gray-700 hover:text-gray-900">
                   Home
@@ -85,9 +95,10 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Resources Links */}
           <div className="text-left ml-4">
             <h5 className="font-bold mb-4">RESOURCES</h5>
-            <ul className="space-y-2">
+            <ul className="space-y-2 font-light">
               <li>
                 <a href="#" className="text-gray-700 hover:text-gray-900">
                   Careers

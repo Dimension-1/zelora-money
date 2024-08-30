@@ -6,7 +6,7 @@ const VideosToLearnSection = () => {
       <div className="mx-auto flex flex-col text-white items-center w-full md:max-w-6xl bg-[#1A1A1A] p-8 rounded-lg">
         <div className="w-full">
           <h2 className="text-5xl font-light mb-8">Videos To Help You Learn</h2>
-          <div className="flex flex-col lg:flex-row lg:space-x-8">
+          <div className="flex flex-col lg:flex-row lg:space-x-8" style={{ fontFamily: "DM Sans, sans-serif" }}>
             {/* Main Video */}
             <div className="lg:w-5/8">
               <div className="rounded-lg overflow-hidden shadow-lg mb-4">
@@ -46,14 +46,14 @@ const VideosToLearnSection = () => {
               ].map((video, index) => (
                 <div
                   key={index}
-                  className="flex items-center space-x-4 border-t border-gray-700 p-4 shadow-lg"
+                  className="flex items-between space-x-4 border-t border-gray-700 p-4 shadow-lg"
                 >
                   <img
                     src={video.image}
                     alt={video.title}
                     className="object-cover rounded-lg"
                   />
-                  <div className="flex flex-col" style={{fontFamily: 'DM Sans'}}>
+                  <div className="flex flex-col justify-around" style={{ fontFamily: "DM Sans, sans-serif" }}>
                     <h4 className="text-lg font-light mb-1">{video.title}</h4>
                     <p className="text-gray-400 text-sm">
                       By {video.source} / {video.time}

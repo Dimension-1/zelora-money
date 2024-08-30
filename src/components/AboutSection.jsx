@@ -24,7 +24,7 @@ const AboutSection = () => {
             className="absolute top-[-20px] left-[-20px] w-24 h-24"
           />
 
-          <h2 className="text-center text-md md:text-xl mb-4">ROADMAP TO SUCCESS</h2>
+          <h2 className="text-center text-md md:text-xl mb-4" style={{fontFamily: "DM Sans, sans-serif"}}>ROADMAP TO SUCCESS</h2>
           <h3 className="text-center text-4xl md:text-5xl">How Do You Achieve?</h3>
 
           <div className="flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 lg:space-x-8 relative">
@@ -48,7 +48,7 @@ const AboutSection = () => {
                 <img
                   src="/Images/About/01.png"
                   alt="01"
-                  className="absolute w-10 h-10"
+                  className="absolute w-14 h-auto"
                   style={{
                     top: "86%",
                     left: "50%",
@@ -82,7 +82,7 @@ const AboutSection = () => {
                 <img
                   src="/Images/About/02.png"
                   alt="02"
-                  className="absolute w-10 h-10"
+                  className="absolute w-14 h-auto"
                   style={{
                     top: "86%",
                     left: "50%",
@@ -116,7 +116,7 @@ const AboutSection = () => {
                 <img
                   src="/Images/About/03.png"
                   alt="03"
-                  className="absolute w-10 h-10"
+                  className="absolute w-14 h-auto"
                   style={{
                     top: "86%",
                     left: "50%",

@@ -4,10 +4,10 @@ const RequestInviteSection = () => {
   return (
     <section className="bg-[#E94A41] text-white py-8 px-8">
       <div className="mx-auto flex flex-col md:flex-row items-center md:items-center md:justify-between w-full md:max-w-6xl">
-        <h2 className="text-3xl md:text-3xl font-light text-center mb-4 md:mb-0">
+        <h2 className="text-3xl md:text-4xl font-normal text-center mb-4 md:mb-0">
           Request your invite now!
         </h2>
-        <div className="flex w-full md:w-2/3">
+        <div className="flex w-full md:w-3/5">
           <input
             type="email"
             placeholder="Enter your email to receive an invite"

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import "../App.css";
 
 const HeaderAndHeroSection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    console.log("Menu button clicked"); // Debugging: log when the button is clicked
+    console.log("Menu button clicked");
     setIsMenuOpen(!isMenuOpen);
   };
 
@@ -31,7 +32,7 @@ const HeaderAndHeroSection = () => {
           </div>
           <ul
             className="hidden lg:flex space-x-8 text-white text-lg items-center"
-            style={{ fontFamily: "RecifeDisplay" }}
+            style={{ fontFamily: "DM Sans, sans-serif" }}
           >
             <li>
               <a href="#" className="hover:underline">
@@ -65,7 +66,7 @@ const HeaderAndHeroSection = () => {
             <button
               className="text-white text-2xl"
               onClick={toggleMenu}
-              style={{ zIndex: 9999, position: "relative" }} // Adjust the z-index and position
+              style={{ zIndex: 9999, position: "relative" }}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -88,28 +89,28 @@ const HeaderAndHeroSection = () => {
         {/* Mobile Menu Dropdown */}
         {isMenuOpen && (
           <div className="absolute top-16 left-0 w-full bg-black text-white flex flex-col items-center space-y-4 py-4 z-10 mt-2">
-            <ul className="text-center space-y-4">
-            <li>
-              <a href="#" className="hover:underline">
-                Courses
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Trade Rooms
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Community
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Resources
-              </a>
-            </li>
-          </ul>
+            <ul className="text-center space-y-4" style={{ fontFamily: "DM Sans, sans-serif" }}>
+              <li>
+                <a href="#" className="hover:underline">
+                  Courses
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Trade Rooms
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Community
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Resources
+                </a>
+              </li>
+            </ul>
           </div>
         )}
 
@@ -139,13 +140,13 @@ const HeaderAndHeroSection = () => {
             alt="Hand pointing"
             className="block lg:hidden relative w-auto h-auto transform"
           />
-          <div className="mt-6 flex flex-col md:flex-row items-center">
+          <div className="mt-6 flex flex-col md:flex-row items-center" style={{ fontFamily: "DM Sans, sans-serif" }}>
             <input
               type="email"
               placeholder="Enter your email to receive an invite"
-              className="py-2 px-4 rounded-lg md:rounded-l-lg text-black w-[300px] md:w-[220px] lg:w-[300px] xl:w-[380px] mb-4 md:mb-0"
+              className="py-2 px-4 rounded-lg md:rounded-l-lg md:rounded-r-none text-black w-[300px] md:w-[220px] lg:w-[300px] xl:w-[380px] mb-4 md:mb-0"
             />
-            <button className="bg-[#4C58F2] text-white py-2 px-6 rounded-lg md:rounded-r-lg hover:bg-blue-700 transition-colors">
+            <button className="bg-[#4C58F2] text-white py-2 px-6 rounded-lg md:rounded-r-lg md:rounded-l-none hover:bg-blue-700 transition-colors">
               Become a citizen
             </button>
           </div>
@@ -155,7 +156,7 @@ const HeaderAndHeroSection = () => {
       <img
         src="/Images/Navbar/hand.png"
         alt="Hand pointing"
-        className="hidden lg:block absolute w-auto h-auto top-[50%] left-0 transform -translate-y-1/2"
+        className="hidden lg:block absolute w-auto h-auto top-[62%] left-0 transform -translate-y-1/2"
       />
     </section>
   );

@@ -6,7 +6,7 @@ const CoursesSection = () => {
       <div className="mx-auto flex flex-col items-center md:items-center md:justify-center w-full md:max-w-6xl">
         {/* Header Section */}
         <div className="text-center mb-16 flex flex-col items-center">
-          <h2 className="text-5xl font-semibold mb-4">Courses</h2>
+          <h2 className="text-5xl font-normal mb-4">Courses</h2>
           <p
             className="text-lg mb-8 max-w-xl font-light"
             style={{ fontFamily: "DM Sans, sans-serif" }}
@@ -15,7 +15,7 @@ const CoursesSection = () => {
             build foundational depth.
           </p>
           <button className="bg-[#4C58F2] hover:bg-blue-700 transition-colors text-white py-3 px-6 rounded-lg flex items-center space-x-2">
-            <span>Explore</span>
+            <span style={{ fontFamily: "DM Sans, sans-serif" }}>Explore</span>
             <img
               src="/Images/Icons/ArrowRight.png"
               alt="Arrow Right"
@@ -32,7 +32,7 @@ const CoursesSection = () => {
           {/* Trading Mastery 101 */}
           <div className="mb-12 ">
             <div className="flex flex-col justify-center items-start mb-8 md:mb-16 mt-4">
-              <h3 className="text-2xl md:text-4xl font-bold mb-2">
+              <h3 className="text-2xl md:text-4xl font-semibold mb-2">
                 Trading Mastery 101
               </h3>
               <span className="bg-[#E94A41] text-white px-6 py-2 rounded-full text-sm">
@@ -120,7 +120,8 @@ const CoursesSection = () => {
                 ].map((item, index) => (
                   <li
                     key={index}
-                    className="flex items-center justify-between py-2 border-b border-gray-300 last:border-b-0"
+                    className="flex items-center text-xl justify-between py-2 border-b border-gray-300 last:border-b-0"
+                    style={{ fontFamily: "DM Sans, sans-serif" }}
                   >
                     <span>{item}</span>
                   </li>
@@ -147,7 +148,7 @@ const CoursesSection = () => {
                 </span>
               </div>
               <div className="bg-[#D9D8D8] p-6 rounded-2xl">
-                <h4 className="text-2xl font-bold mb-6 text-left">
+                <h4 className="text-3xl font-semibold mb-6 text-left" style={{ fontFamily: "DM Sans, sans-serif" }}>
                   Mentored by Experts
                 </h4>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
@@ -177,7 +178,7 @@ const CoursesSection = () => {
                         index === 2 ? "hidden md:block" : ""
                       }`}
                     >
-                      <div className="mx-auto overflow-hidden mb-2">
+                      <div className="mx-auto overflow-hidden mb-2" style={{ fontFamily: "DM Sans, sans-serif" }}>
                         <img
                           src={mentor.image}
                           alt={mentor.name}
@@ -185,11 +186,11 @@ const CoursesSection = () => {
                         />
                       </div>
                       <div className="px-2 flex flex-col justify-center items-between">
-                        <p className="font-semibold text-xs md:text-xl text-black">
+                        <p className="font-normal text-xs md:text-base text-black">
                           {mentor.name}
                         </p>
-                        <p className="text-xs text-black">{mentor.title}</p>
-                        <p className="text-xs text-black">
+                        <p className="text-xs font-light text-black">{mentor.title}</p>
+                        <p className="text-xs font-light text-black">
                           {mentor.experience}
                         </p>
                       </div>

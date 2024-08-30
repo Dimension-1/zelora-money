@@ -36,19 +36,19 @@ const FAQSection = () => {
     <section className="bg-black text-white py-16 pt-4 md:px-8 px-4">
       <div className="mx-auto flex flex-col items-center md:items-center md:justify-between w-full md:max-w-4xl">
         <h2 className="text-4xl font-light text-center mb-8">FAQs</h2>
-        <div className="flex flex-col md:flex-row items-center justify-center md:space-x-8 mb-8">
+        <div className="flex flex-col md:flex-row items-center justify-center md:space-x-8 mb-8" style={{ fontFamily: "DM Sans, sans-serif" }}>
           <button className="text-gray-400 hover:text-white">
             General Queries
           </button>
-          <button className="text-white">Community Related</button>
-          <button className="text-gray-400 hover:text-white">
+          <button className="text-white mt-2 md:mt-0">Community Related</button>
+          <button className="text-gray-400 hover:text-white mt-2 md:mt-0">
             Pricing Plan Related
           </button>
-          <button className="text-gray-400 hover:text-white">
+          <button className="text-gray-400 hover:text-white mt-2 md:mt-0">
             Course Related
           </button>
         </div>
-        <div className="w-full space-y-4">
+        <div className="w-full space-y-4" style={{ fontFamily: "DM Sans, sans-serif" }}>
           {faqs.map((faq, index) => (
             <div key={index} className="border-b border-gray-700 py-4">
               <div
