@@ -18,7 +18,13 @@ const CitizenPassSection = () => {
   ];
 
   return (
-    <section className="relative px-4 md:px-8 overflow-hidden">
+    <section
+    className="relative px-4 md:px-8 overflow-hidden"
+    style={{
+      background: 'rgb(0, 0, 0)', 
+      background: 'linear-gradient(180deg, rgba(0, 0, 0, 1) 40%, rgba(255, 255, 255, 1) 40%)',
+    }}
+  >
       <div className="mx-auto flex flex-col items-center md:items-center md:justify-center w-full md:max-w-6xl">
         {/* Top half with black background */}
         <div className="text-white py-16">
