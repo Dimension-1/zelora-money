@@ -139,7 +139,7 @@ const OurValuesAndStories = () => {
             <img
               src={stories.arrowsMobile}
               alt="Arrows"
-              className="absolute block md:hidden top-[65px]"
+              className="absolute block md:hidden right-[px] top-[65px]"
             />
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">

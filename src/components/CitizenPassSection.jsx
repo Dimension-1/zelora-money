@@ -19,20 +19,21 @@ const CitizenPassSection = () => {
 
   return (
     <section
-    className="relative px-4 md:px-8 overflow-hidden"
-    style={{
-      background: 'rgb(0, 0, 0)', 
-      background: 'linear-gradient(180deg, rgba(0, 0, 0, 1) 40%, rgba(255, 255, 255, 1) 40%)',
-    }}
-  >
+      className="relative px-4 md:px-8 overflow-hidden bg-white md:bg-none"
+      style={{
+        background: "rgb(0, 0, 0)",
+        background:
+          "linear-gradient(180deg, rgba(0, 0, 0, 1) 40%, rgba(255, 255, 255, 1) 40%)",
+      }}
+    >
       <div className="mx-auto flex flex-col items-center md:items-center md:justify-center w-full md:max-w-6xl">
         {/* Top half with black background */}
         <div className="text-white py-16">
           <div className="max-w-7xl flex flex-col md:flex-row rounded mx-4">
             {/* Left Side - All Access Citizen Pass */}
-            
+
             <div
-              className="py-10 p-2 md:p-8 flex flex-col items-center md:justify-center relative md:w-1/3 rounded-t-lg md:rounded-l-lg md:rounded-r-none"
+              className="py-10 p-2 md:p-8 flex flex-col items-center md:justify-center relative md:w-1/3 rounded-t-lg rounded-r-xl md:rounded-l-lg md:rounded-r-none"
               style={{
                 backgroundImage: `url('/Images/CitizenPass/bg.png')`,
                 backgroundSize: "cover",
@@ -48,7 +49,12 @@ const CitizenPassSection = () => {
               <h2 className="text-4xl font-base text-center mb-4">
                 An All Access Citizen Pass
               </h2>
-              <p className="text-sm md:text-xl text-center mb-8" style={{fontFamily: "DM Sans, sans-serif"}}>PRICING AND BENEFITS</p>
+              <p
+                className="text-sm md:text-xl text-center mb-8"
+                style={{ fontFamily: "DM Sans, sans-serif" }}
+              >
+                PRICING AND BENEFITS
+              </p>
               <img
                 src="/Images/CitizenPass/arrow.png"
                 alt="Arrow"
@@ -57,10 +63,15 @@ const CitizenPassSection = () => {
             </div>
 
             {/* Middle - Pricing Plans */}
-            <div className="flex flex-col lg:items-center bg-[#EBEBEB] rounded-b-lg md:rounded-r-lg pb-4" style={{fontFamily: "DM Sans, sans-serif"}}>
+            <div
+              className="flex flex-col lg:items-center bg-[#EBEBEB] rounded-b-lg md:rounded-r-lg pb-4"
+              style={{ fontFamily: "DM Sans, sans-serif" }}
+            >
               <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start p-4 md:p-8">
                 <div className="bg-white text-black p-8 rounded-lg shadow-lg mr-0 mb-4 md:mb-0 lg:mr-6">
-                  <h3 className="text-base font-light text-[#808080] mb-2">Monthly Plan</h3>
+                  <h3 className="text-base font-light text-[#808080] mb-2">
+                    Monthly Plan
+                  </h3>
                   <p className="text-2xl font-semibold mb-4">$36/month</p>
                   <ul className="space-y-2 mb-8">
                     {[
@@ -89,7 +100,9 @@ const CitizenPassSection = () => {
                   <div className="absolute top-11 right-4 bg-white text-[#E94A41] border border-[#E94A41] py-1 px-4 rounded-lg">
                     30% OFF
                   </div>
-                  <h3 className="text-base font-light text-[#808080] mb-2">Yearly Plan</h3>
+                  <h3 className="text-base font-light text-[#808080] mb-2">
+                    Yearly Plan
+                  </h3>
                   <p className="text-2xl font-bold mb-4">$290/year</p>
                   <ul className="space-y-2 mb-8">
                     {yearlyPlanItems.map((item, index) => (

@@ -1,6 +1,27 @@
 import React from "react";
 
 const CoursesSection = () => {
+  const mentors = [
+    {
+      name: "Chandrakant Sharma",
+      title: "Co-founder Fino",
+      experience: "5Y+ Full-time Prop trader",
+      image: "/Images/Courses/expert1.png",
+    },
+    {
+      name: "Abhimanyu Kucheria",
+      title: "Partner & Fund Manager",
+      experience: "Second Street Partners",
+      image: "/Images/Courses/expert3.png",
+    },
+    {
+      name: "Pratik Patil",
+      title: "Proprietary Trader & CMT II",
+      experience: "4Y+ Full-time Prop trader",
+      image: "/Images/Courses/expert2.png",
+    },
+  ];
+
   return (
     <section className="py-16 bg-[#F7F8FA] text-black px-4 md:px-8">
       <div className="mx-auto flex flex-col items-center md:items-center md:justify-center w-full md:max-w-6xl">
@@ -137,59 +158,42 @@ const CoursesSection = () => {
               </button>
             </div>
             <div className="lg:w-3/5 flex flex-col gap-8">
+              {/* Demo Image */}
               <div className="relative text-center">
                 <img
                   src="/Images/Courses/demo.png"
                   alt="View Demo"
                   className="rounded-lg shadow-lg w-full"
                 />
-                <span className="absolute bottom-6 left-1/2 transform -translate-x-1/2 translate-y-1/2 text-white py-1 px-3 rounded-lg shadow text-center bg-opacity-75 text-xs">
-                  View Demo
-                </span>
               </div>
-              <div className="bg-[#D9D8D8] p-6 rounded-2xl">
-                <h4 className="text-3xl font-semibold mb-6 text-left" style={{ fontFamily: "DM Sans, sans-serif" }}>
+              {/* Mentored by Experts Section */}
+              <div className="bg-[#D9D8D8] p-4 sm:p-6 rounded-2xl">
+                <h4
+                  className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 text-left"
+                  style={{ fontFamily: "DM Sans, sans-serif" }}
+                >
                   Mentored by Experts
                 </h4>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
-                  {[
-                    {
-                      name: "Chandrakant Sharma",
-                      title: "Co-founder Fino",
-                      experience: "5Y+ Full-time Prop trader",
-                      image: "/Images/Courses/expert1.png",
-                    },
-                    {
-                      name: "Abhimanyu Kucheria",
-                      title: "Partner & Fund Manager",
-                      experience: "Second Street Partners",
-                      image: "/Images/Courses/expert3.png",
-                    },
-                    {
-                      name: "Pratik Patil",
-                      title: "Proprietary Trader & CMT II",
-                      experience: "4Y+ Full-time Prop trader",
-                      image: "/Images/Courses/expert2.png",
-                    },
-                  ].map((mentor, index) => (
+                <div className="flex overflow-x-auto scrollbar-hide space-x-4">
+                  {mentors.map((mentor, index) => (
                     <div
                       key={index}
-                      className={`bg-[#EBEBEB] pb-4 transition-shadow flex flex-col justify-items-center text-center relative ${
-                        index === 2 ? "hidden md:block" : ""
-                      }`}
+                      className="bg-[#EBEBEB] min-w-[60px] sm:min-w-[100px] p-2 sm:p-4 flex-shrink-0 rounded-lg shadow-md flex flex-col items-center text-center"
                     >
-                      <div className="mx-auto overflow-hidden mb-2" style={{ fontFamily: "DM Sans, sans-serif" }}>
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 overflow-hidden rounded-full mb-2 sm:mb-4">
                         <img
                           src={mentor.image}
                           alt={mentor.name}
-                          className="w-[120px] md:w-full md:h-full object-cover"
+                          className="w-full h-full object-cover"
                         />
                       </div>
-                      <div className="px-2 flex flex-col justify-center items-between">
-                        <p className="font-normal text-xs md:text-base text-black">
+                      <div className="flex flex-col items-center">
+                        <p className="font-semibold text-xs sm:text-sm text-black mb-1">
                           {mentor.name}
                         </p>
-                        <p className="text-xs font-light text-black">{mentor.title}</p>
+                        <p className="text-xs font-light text-black">
+                          {mentor.title}
+                        </p>
                         <p className="text-xs font-light text-black">
                           {mentor.experience}
                         </p>

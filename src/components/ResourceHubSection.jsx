@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const ResourceHubSection = () => {
+  const [activeTab, setActiveTab] = useState("Articles"); // State for active tab
+
   const settings = {
     dots: true,
     infinite: true,
@@ -55,6 +57,10 @@ const ResourceHubSection = () => {
     // Add more articles if needed
   ];
 
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
+
   return (
     <section className="bg-black text-white py-12 md:py-16 px-8 relative">
       <div className="mx-auto flex flex-col items-start justify-center items-center w-full md:max-w-6xl">
@@ -64,7 +70,10 @@ const ResourceHubSection = () => {
           className="relative block md:hidden top-[-50px] right-0 h-auto md:w-[200px]"
         />
         <h2 className="text-5xl font-normal mb-4 text-center">Resource Hub</h2>
-        <p className="text-lg mb-8 text-center font-light max-w-2xl" style={{ fontFamily: "DM Sans, sans-serif" }}>
+        <p
+          className="text-lg mb-8 text-center font-light max-w-2xl"
+          style={{ fontFamily: "DM Sans, sans-serif" }}
+        >
           Find blogs, articles, videos, and tutorials, all for free, to help you
           learn at your own pace and upskill.
         </p>
@@ -78,19 +87,30 @@ const ResourceHubSection = () => {
         </button>
 
         {/* Navigation Tabs */}
-        <div className="flex justify-center space-x-8 text-lg mb-8" style={{ fontFamily: "DM Sans, sans-serif" }}>
-          <a href="#" className="text-gray-400 hover:text-white">
-            Blogs
-          </a>
-          <a href="#" className="text-white underline decoration-blue-600">
-            Articles
-          </a>
-          <a href="#" className="text-gray-400 hover:text-white">
-            Tutorials
-          </a>
-          <a href="#" className="text-gray-400 hover:text-white">
-            News
-          </a>
+        <div
+          className="flex justify-center space-x-8 text-lg mb-8"
+          style={{ fontFamily: "DM Sans, sans-serif" }}
+        >
+          {["Blogs", "Articles", "Tutorials", "News"].map((tab, index) => (
+            <button
+              key={index}
+              onClick={() => handleTabClick(tab)}
+              className={`relative text-lg font-light px-4 py-2 transition-colors duration-200 ${
+                activeTab === tab
+                  ? "text-white"
+                  : "text-gray-400 hover:text-white"
+              }`}
+            >
+              {tab}
+              {activeTab === tab && (
+                <img
+                  src="/images/Resource/circle.png"
+                  alt="Active Indicator"
+                  className="absolute bottom-0 left-1/2 transform -translate-x-1/2"
+                />
+              )}
+            </button>
+          ))}
         </div>
 
         {/* Articles Carousel */}
