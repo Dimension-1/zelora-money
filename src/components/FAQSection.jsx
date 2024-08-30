@@ -59,9 +59,9 @@ const FAQSection = () => {
                 {tab}
                 {activeTab === tab && (
                   <img
-                    src="/images/FAQ/circle.png"
+                    src="/Images/FAQ/circle.png"
                     alt="Active Indicator"
-                    className="absolute -bottom-0 left-1/2 transform -translate-x-1/2 z-0" // Adjust width and auto height
+                    className="absolute -bottom-0 left-1/2 transform -translate-x-1/2 z-0"
                   />
                 )}
               </button>
