@@ -24,18 +24,45 @@ const AboutSection = () => {
             className="absolute top-[-20px] left-[-20px] w-24 h-24"
           />
 
-          <h2 className="text-center text-md md:text-xl mb-4" style={{fontFamily: "DM Sans, sans-serif"}}>ROADMAP TO SUCCESS</h2>
-          <h3 className="text-center text-4xl md:text-5xl">How Do You Achieve?</h3>
+          <h2
+            className="text-center text-md md:text-xl mb-4"
+            style={{ fontFamily: "DM Sans, sans-serif" }}
+          >
+            ROADMAP TO SUCCESS
+          </h2>
+          <h3 className="text-center text-4xl md:text-5xl">
+            How Do You Achieve?
+          </h3>
 
           <div className="flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 lg:space-x-8 relative">
-            <div
-              className="block lg:hidden absolute inset-y-0 top-[10%] left-[12%] md:left-[9%] h-[700px] md:h-full w-[2px] bg-[#4C58F2] max-h-full"
-            ></div>
-          
-            <div
-              className="hidden lg:block absolute inset-x-0 top-[86px] lg:top-[86px] h-[2px] bg-[#4C58F2] max-w-5xl"
-              style={{ transform: "rotate(180deg)" }}
-            ></div>
+            {/* Vertical Line for Mobile */}
+            <div className="block lg:hidden absolute inset-y-0 top-[10%] left-[12%] md:left-[9%] h-[700px] md:h-full w-[2px] bg-[#4C58F2] max-h-full">
+              <div
+                className="absolute right-0 top-[-5px]"
+                style={{
+                  width: "0",
+                  height: "0",
+                  borderTop: "6px solid transparent",
+                  borderBottom: "6px solid transparent",
+                  borderLeft: "8px solid #4C58F2",
+                }}
+              ></div>
+            </div>
+
+            {/* Horizontal Line for Desktop with CSS Arrow */}
+            <div className="hidden lg:block absolute left-[5%] inset-x-0 top-[86px] lg:top-[86px] h-[2px] bg-[#4C58F2] max-w-4xl px-4">
+              {/* CSS Arrowhead */}
+              <div
+                className="absolute right-0 top-[-5px]"
+                style={{
+                  width: "0",
+                  height: "0",
+                  borderTop: "6px solid transparent",
+                  borderBottom: "6px solid transparent",
+                  borderLeft: "8px solid #4C58F2",
+                }}
+              ></div>
+            </div>
 
             {/* Card 1 */}
             <div className="flex-1 p-0 md:p-6 rounded-lg flex flex-col justify-start items-start relative">

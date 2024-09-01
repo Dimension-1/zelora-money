@@ -15,8 +15,9 @@ const HeaderAndHeroSection = () => {
       style={{
         backgroundImage: `url('/Images/Navbar/Bg.png')`,
         backgroundSize: "cover",
+        backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        width: "101vw",
+        width: "100vw",
         height: "100vh",
       }}
     >

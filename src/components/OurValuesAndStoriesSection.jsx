@@ -1,24 +1,53 @@
 import React from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const OurValuesAndStories = () => {
-  const stories = {
-    testimonial:
-      "A close founder friend recommended FinoClub. To be very honest I thought I know everything that FinoClub will teach. But I realised that a lot of things that are so basic were missing in my approach.",
-    name: "Blessen George",
-    title1: "AVP Project Program",
-    title2: "Management at StateStreet",
-    arrows: "/Images/Stories/Arrows.png",
-    arrowsMobile: "/Images/Stories/arrows-mobile.png",
-    image: "/Images/Stories/blessen-1.png",
-    memberSince: "/Images/Stories/memberSince.png",
-    speechBubbles: "/Images/Stories/colon.png",
+  const stories = [
+    {
+      testimonial:
+        "A close founder friend recommended FinoClub. To be very honest I thought I know everything that FinoClub will teach. But I realised that a lot of things that are so basic were missing in my approach.",
+      name: "Blessen George",
+      title1: "AVP Project Program",
+      title2: "Management at StateStreet",
+      arrows: "/Images/Stories/Arrows.png",
+      arrowsMobile: "/Images/Stories/arrows-mobile.png",
+      image: "/Images/Stories/blessen-1.png",
+      memberSince: "/Images/Stories/memberSince.png",
+      speechBubbles: "/Images/Stories/colon.png",
+    },
+    {
+      testimonial:
+        "A close founder friend recommended FinoClub. To be very honest I thought I know everything that FinoClub will teach. But I realised that a lot of things that are so basic were missing in my approach.",
+      name: "Blessen George",
+      title1: "AVP Project Program",
+      title2: "Management at StateStreet",
+      arrows: "/Images/Stories/Arrows.png",
+      arrowsMobile: "/Images/Stories/arrows-mobile.png",
+      image: "/Images/Stories/blessen-1.png",
+      memberSince: "/Images/Stories/memberSince.png",
+      speechBubbles: "/Images/Stories/colon.png",
+    },
+    // Add more stories as needed
+  ];
+
+  const responsive = {
+    superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 1 },
+    desktop: { breakpoint: { max: 3000, min: 1024 }, items: 1 },
+    tablet: { breakpoint: { max: 1024, min: 768 }, items: 1 },
+    mobile: { breakpoint: { max: 768, min: 0 }, items: 1 },
   };
 
+  const containerClass = {};
+
   return (
-    <section className="bg-black text-white px-4 md:px-8 overflow-hidden" >
+    <section className="bg-black text-white px-4 md:px-8 overflow-hidden">
       <div className="mx-auto flex flex-col items-start justify-center items-center w-full md:max-w-6xl">
         {/* 4 Pillars of Foundation */}
-        <div className="py-16 md:py-24 relative" style={{ fontFamily: "DM Sans, sans-serif" }}>
+        <div
+          className="py-16 md:py-24 relative"
+          style={{ fontFamily: "DM Sans, sans-serif" }}
+        >
           <div className="text-center mb-24 relative">
             <h2
               className="text-xl font-normal mb-4"
@@ -26,14 +55,17 @@ const OurValuesAndStories = () => {
             >
               OUR VALUES
             </h2>
-            <h3 className="text-5xl font-normal relative z-10">
-              The 4 Pillars of Foundation
-            </h3>
-            <img
-              src="/Images/Values/overlay.png"
-              alt="Foundation Overlay"
-              className="absolute top-[70px] lg:right-[10%] md:top-[70%] xl:right-[12%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:w-[25%]"
-            />
+            <div className="relative inline-block">
+              <h3 className="text-5xl font-normal relative z-10">
+                The 4 Pillars of Foundation
+              </h3>
+              {/* Circular Overlay Image */}
+              <img
+                src="/Images/Values/overlay.png"
+                alt="Foundation Overlay"
+                className="absolute left-[20%] sm:left-[55%] bottom-0 md:transform w-[60%]  sm:w-[50%] rounded-full"
+              />
+            </div>
           </div>
 
           {/* Individual Pillars */}
@@ -120,73 +152,57 @@ const OurValuesAndStories = () => {
         </div>
 
         {/* Featured Trader Stories */}
-        <div className="bg-[#1A1A1A] p-4 md:p-12 rounded-lg max-w-7xl mx-auto mb-16">
+        <div className="bg-[#1A1A1A] p-4 md:p-12 rounded-lg max-w-7xl mb-16">
           <div className="relative text-center md:mb-16">
-            <h2
-              className="text-md md:text-xl font-normal mb-4"
-              style={{ fontFamily: "DM Sans, sans-serif" }}
-            >
+            <h2 className="text-md md:text-xl font-normal mb-4">
               FEATURED TRADER STORIES
             </h2>
             <h3 className="text-4xl md:text-5xl font-normal mb-12 relative inline-block">
               People Who Grew With Us
             </h3>
-            <img
-              src={stories.arrows}
-              alt="Arrows"
-              className="absolute hidden md:block -top-[20px] right-[19%] max-w-2xl"
-            />
-            <img
-              src={stories.arrowsMobile}
-              alt="Arrows"
-              className="absolute block md:hidden right-[px] top-[65px]"
-            />
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div className="order-2 lg:order-1 md:p-8 rounded-lg h-full flex flex-col justify-center" >
-              <p
-                className="text-2xl md:text-3xl mb-8 font-light"
-                style={{ fontFamily: "DM Sans, sans-serif"}}
+          <Carousel
+            responsive={responsive}
+            infinite={true}
+            showDots={true}
+            autoPlay={true}
+            autoPlaySpeed={3000}
+            containerClass="w-[380px] sm:w-[600px] md:w-[800px] lg:w-[900px] xl:w-[1055px] "
+            itemClass="carousel-item flex justify-center items-center"
+          >
+            {stories.map((story, index) => (
+              <div
+                key={index}
+                className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-4"
               >
-                {stories.testimonial}
-              </p>
-              <p
-                className="font-semibold text-lg"
-                style={{ fontFamily: "DM Sans, sans-serif" }}
-              >
-                {stories.name}
-              </p>
-              <p
-                className="text-[#B9B7B7] text-lg"
-                style={{ fontFamily: "DM Sans, sans-serif" }}
-              >
-                {stories.title1}
-              </p>
-              <p
-                className="text-[#B9B7B7] text-lg"
-                style={{ fontFamily: "DM Sans, sans-serif" }}
-              >
-                {stories.title2}
-              </p>
-            </div>
-            <div className="order-1 lg:order-2 relative h-full flex items-center justify-center">
-              <img
-                src={stories.image}
-                alt={stories.name}
-                className="rounded-lg shadow-lg w-auto h-auto object-cover"
-              />
-              <img
-                src={stories.speechBubbles}
-                alt="Speech Bubbles"
-                className="absolute -top-14 right-0 md:right-10 w-44 h-auto"
-              />
-              <img
-                src={stories.memberSince}
-                alt="Fino Club Member Since 2023"
-                className="absolute -bottom-6 left-0 md:left-4 w-48 h-auto"
-              />
-            </div>
-          </div>
+                <div className="order-2 lg:order-1 flex flex-col justify-center">
+                  <p className="text-xl md:text-2xl lg:text-3xl mb-4 font-light">
+                    {story.testimonial}
+                  </p>
+                  <p className="font-semibold text-lg">{story.name}</p>
+                  <p className="text-[#B9B7B7] text-lg">{story.title1}</p>
+                  <p className="text-[#B9B7B7] text-lg">{story.title2}</p>
+                </div>
+                <div className="order-1 lg:order-2 flex items-center justify-center relative ">
+                  <img
+                    src={story.image}
+                    alt={story.name}
+                    className="w-full h-auto rounded-lg shadow-lg object-cover max-w-md"
+                  />
+                  <img
+                    src={story.speechBubbles}
+                    alt="Speech Bubbles"
+                    className="absolute -top-10 right-0 h-auto w-40"
+                  />
+                  <img
+                    src={story.memberSince}
+                    alt="Fino Club Member Since 2023"
+                    className="absolute -bottom-8 left-0 h-auto w-44"
+                  />
+                </div>
+              </div>
+            ))}
+          </Carousel>
         </div>
       </div>
     </section>

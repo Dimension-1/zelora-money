@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const HeaderAndHeroSection = () => {
   return (
@@ -14,23 +14,27 @@ const HeaderAndHeroSection = () => {
     >
       <div className="mx-auto flex flex-col items-center md:items-center md:justify-between w-full md:max-w-6xl relative h-full">
         {/* Navbar */}
-        <nav className="flex justify-between items-center px-6 pl-0 w-full">
-          <div className="text-red-600 text-4xl font-bold">
+        <nav className="flex justify-between items-center px-6 pl-0 w-full relative">
+          <div className="flex flex-1 justify-start items-center">
             <img
               src="/Images/Navbar/Logo.png"
               alt="Logo"
               className="md:h-48 md:w-48 w-24"
             />
           </div>
+          {/* Centered Coming Soon Image in Navbar */}
+          <div className="flex flex-1 justify-center items-center">
+            <img
+              src="/Images/Navbar/coming-soon.png"
+              alt="Coming Soon"
+              className="h-24 w-full md:h-44"
+            />
+          </div>
+          <div className="flex flex-1 justify-end"></div>
         </nav>
 
         {/* Hero Section */}
-        <div className="flex flex-col items-center justify-center text-center px-6 pb-12 pt-32 h-full relative">
-          <img
-            src="/Images/Navbar/coming-soon.png"
-            alt="Underline"
-            className="absolute -top-12 md:-top-32"
-          />
+        <div className="flex flex-col items-center justify-start text-center px-6 pb-12 h-full relative">
           <h1
             className="text-5xl md:text-6xl xl:text-7xl font-semibold leading-tight relative"
             style={{ fontFamily: "RecifeDisplay", fontWeight: 400 }}

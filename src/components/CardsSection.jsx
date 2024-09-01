@@ -21,8 +21,8 @@ const cardsData = [
 const CardsSection = () => {
   return (
     <section className="py-12 mx-8">
-      <div className="mx-auto flex flex-col items-start text-left md:text-left md:items-start md:justify-between w-full md:max-w-6xl">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="mx-auto flex flex-col items-start text-left md:text-left md:items-start md:justify-between w-full md:max-w-7xl xl:max-w-8xl">
+        <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {cardsData.map((card) => (
             <div
               key={card.id}
@@ -31,7 +31,7 @@ const CardsSection = () => {
               <img
                 src={card.image}
                 alt={card.title}
-                className="rounded-lg mb-4 w-full h-48 object-cover"
+                className="rounded-lg mb-4 w-full h-52 xl:h-64 object-cover"
               />
               <div className="flex justify-between items-center w-full mt-4">
                 <h3 className="text-2xl ">{card.title}</h3>

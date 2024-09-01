@@ -61,7 +61,7 @@ const CommunityAndCryptoSection = () => {
               <img
                 src="/Images/Crypto/crypto-icon.png"
                 alt="Crypto Icon"
-                className="absolute -bottom-24 right-32 z-30 w-[230px] md:w-auto"
+                className="absolute -bottom-24 right:1/2 lg:right-32 z-30 w-[230px] md:w-auto"
               />
             </div>
             <button className="mt-8 bg-[#4C58F2] hover:bg-blue-700 transition-all duration-300 ease-in-out text-white py-3 px-6 rounded-lg shadow-lg flex items-center justify-center space-x-2">
