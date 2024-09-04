@@ -1,6 +1,12 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 const CommunityAndCryptoSection = () => {
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleRedirect = () => {
+    navigate('/coming-soon'); // Redirect to the /coming-soon page
+  };
   return (
     <section className="py-24 bg-white relative px-8">
       <div className="mx-auto flex flex-col items-center md:items-center w-full md:max-w-6xl">
@@ -33,7 +39,7 @@ const CommunityAndCryptoSection = () => {
                 className="absolute -bottom-10 -right-10 w-40"
               />
             </div>
-            <button className="mt-8 bg-[#4C58F2] hover:bg-blue-700 transition-all duration-300 ease-in-out text-white py-3 px-6 rounded-lg shadow-lg flex items-center justify-center space-x-2">
+            <button className="mt-8 bg-[#4C58F2] hover:bg-blue-700 transition-all duration-300 ease-in-out text-white py-3 px-6 rounded-lg shadow-lg flex items-center justify-center space-x-2" onClick={handleRedirect}>
               <span>Explore</span>
               <img
                 src="/Images/Icons/ArrowRight.png"
@@ -64,7 +70,7 @@ const CommunityAndCryptoSection = () => {
                 className="absolute -bottom-24 right:1/2 lg:right-32 z-30 w-[230px] md:w-auto"
               />
             </div>
-            <button className="mt-8 bg-[#4C58F2] hover:bg-blue-700 transition-all duration-300 ease-in-out text-white py-3 px-6 rounded-lg shadow-lg flex items-center justify-center space-x-2">
+            <button className="mt-8 bg-[#4C58F2] hover:bg-blue-700 transition-all duration-300 ease-in-out text-white py-3 px-6 rounded-lg shadow-lg flex items-center justify-center space-x-2" onClick={handleRedirect}>
               <span>Explore</span>
               <img
                 src="/Images/Icons/ArrowRight.png"

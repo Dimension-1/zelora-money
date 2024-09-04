@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useNavigate } from 'react-router-dom';
 
 const ResourceHubSection = () => {
   const [activeTab, setActiveTab] = useState("Articles"); // State for active tab
@@ -61,6 +62,12 @@ const ResourceHubSection = () => {
     setActiveTab(tab);
   };
 
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleRedirect = () => {
+    navigate('/coming-soon'); // Redirect to the /coming-soon page
+  };
+
   return (
     <section className="bg-black text-white py-12 md:py-16 px-8 relative">
       <div className="mx-auto flex flex-col items-start justify-center items-center w-full md:max-w-6xl">
@@ -78,7 +85,7 @@ const ResourceHubSection = () => {
           learn at your own pace and upskill.
         </p>
         <button className="mb-10 bg-[#4C58F2] hover:bg-blue-700 transition-all duration-300 ease-in-out text-white py-2 px-6 rounded-lg shadow-lg flex items-center justify-center space-x-2">
-          <span style={{ fontFamily: "DM Sans, sans-serif" }}>Explore</span>
+          <span style={{ fontFamily: "DM Sans, sans-serif" }} onClick={handleRedirect}>Explore</span>
           <img
             src="/Images/Icons/ArrowRight.png"
             alt="Arrow Right"

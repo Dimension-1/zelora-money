@@ -1,10 +1,11 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 const cardsData = [
   {
     id: 1,
     title: "Courses",
-    image: "/Images/Cards/courses.png", 
+    image: "/Images/Cards/courses.png",
   },
   {
     id: 2,
@@ -19,6 +20,12 @@ const cardsData = [
 ];
 
 const CardsSection = () => {
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleRedirect = () => {
+    navigate('/coming-soon'); // Redirect to the /coming-soon page
+  };
+
   return (
     <section className="py-12 mx-8">
       <div className="mx-auto flex flex-col items-start text-left md:text-left md:items-start md:justify-between w-full md:max-w-7xl xl:max-w-8xl">
@@ -35,11 +42,12 @@ const CardsSection = () => {
               />
               <div className="flex justify-between items-center w-full mt-4">
                 <h3 className="text-2xl ">{card.title}</h3>
-                {/* Arrow PNG */}
+                {/* Clickable Arrow PNG */}
                 <img
                   src="/Images/Cards/arrow.png"
                   alt="Arrow"
-                  className="w-6 h-6"
+                  className="w-6 h-6 cursor-pointer" // Add cursor pointer for hover effect
+                  onClick={handleRedirect} // Add onClick event for redirection
                 />
               </div>
             </div>

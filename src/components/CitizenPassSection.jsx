@@ -1,6 +1,12 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 const CitizenPassSection = () => {
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleRedirect = () => {
+    navigate('/coming-soon'); // Redirect to the /coming-soon page
+  };
   const checkmarkIcon = "/Images/CitizenPass/checkbox.png";
   const addIcon = "/Images/CitizenPass/add.png";
 
@@ -117,11 +123,11 @@ const CitizenPassSection = () => {
                     ))}
                   </ul>
                 </div>
-                <button className="lg:hidden block bg-[#4C58F2] text-white text-sm py-2 px-6 mt-4 rounded-lg">
+                <button className="lg:hidden block bg-[#4C58F2] text-white text-sm py-2 px-6 mt-4 rounded-lg" onClick={handleRedirect}>
                   Become a citizen
                 </button>
               </div>
-              <button className="hidden lg:block bg-[#4C58F2] text-white text-sm py-2 px-6 mt-4 rounded-lg text-center">
+              <button className="hidden lg:block bg-[#4C58F2] text-white text-sm py-2 px-6 mt-4 rounded-lg text-center" onClick={handleRedirect}>
                 Become a citizen
               </button>
             </div>

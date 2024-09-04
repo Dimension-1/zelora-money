@@ -1,12 +1,19 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for redirection
 import "../App.css";
 
 const HeaderAndHeroSection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const toggleMenu = () => {
     console.log("Menu button clicked");
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleRedirect = (e) => {
+    e.preventDefault(); // Prevent the default link behavior
+    navigate('/coming-soon'); // Redirect to the /coming-soon page
   };
 
   return (
@@ -23,7 +30,7 @@ const HeaderAndHeroSection = () => {
     >
       <div className="mx-auto flex flex-col items-center justify-center w-full md:max-w-6xl relative h-full">
         {/* Navbar */}
-        <nav className="flex justify-between items-center px-6 pl-0 w-full absolute top-0">
+        <nav className="flex justify-between items-center px-6 pl-0 w-full absolute top-0 z-20"> {/* Added z-index */}
           <div className="text-red-600 text-4xl font-bold">
             <img
               src="/Images/Navbar/Logo.png"
@@ -36,32 +43,38 @@ const HeaderAndHeroSection = () => {
             style={{ fontFamily: "DM Sans, sans-serif" }}
           >
             <li>
-              <a href="#" className="hover:underline">
+              <a href="#" className="hover:underline" onClick={handleRedirect}>
                 Courses
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <a href="#" className="hover:underline" onClick={handleRedirect}>
                 Trade Rooms
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <a href="#" className="hover:underline" onClick={handleRedirect}>
                 Community
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <a href="#" className="hover:underline" onClick={handleRedirect}>
                 Resources
               </a>
             </li>
-            <button className="bg-[#4C58F2] text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">
+            <button
+              className="bg-[#4C58F2] text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors"
+              onClick={handleRedirect}
+            >
               Become a citizen
             </button>
           </ul>
           {/* Mobile menu */}
           <div className="flex lg:hidden items-center space-x-4">
-            <button className="bg-[#4C58F2] text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
+            <button
+              className="bg-[#4C58F2] text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors"
+              onClick={handleRedirect}
+            >
               Become a citizen
             </button>
             <button
@@ -89,25 +102,25 @@ const HeaderAndHeroSection = () => {
 
         {/* Mobile Menu Dropdown */}
         {isMenuOpen && (
-          <div className="absolute top-16 left-0 w-full bg-black text-white flex flex-col items-center space-y-4 py-4 z-10 mt-2">
+          <div className="absolute top-16 left-0 w-full bg-black text-white flex flex-col items-center space-y-4 py-4 z-30 mt-2">
             <ul className="text-center space-y-4" style={{ fontFamily: "DM Sans, sans-serif" }}>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:underline" onClick={handleRedirect}>
                   Courses
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:underline" onClick={handleRedirect}>
                   Trade Rooms
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:underline" onClick={handleRedirect}>
                   Community
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:underline" onClick={handleRedirect}>
                   Resources
                 </a>
               </li>
@@ -116,7 +129,7 @@ const HeaderAndHeroSection = () => {
         )}
 
         {/* Hero Section */}
-        <div className="flex flex-col items-center justify-center text-center px-6 py-12 h-full relative">
+        <div className="flex flex-col items-center justify-center text-center px-6 py-12 h-full relative z-10">
           <h1
             className="text-5xl md:text-6xl xl:text-7xl font-semibold leading-tight relative"
             style={{
@@ -147,7 +160,10 @@ const HeaderAndHeroSection = () => {
               placeholder="Enter your email to receive an invite"
               className="py-2 px-4 rounded-lg md:rounded-l-lg md:rounded-r-none text-black w-[300px] md:w-[220px] lg:w-[300px] xl:w-[380px] mb-4 md:mb-0"
             />
-            <button className="bg-[#4C58F2] text-white py-2 px-6 rounded-lg md:rounded-r-lg md:rounded-l-none hover:bg-blue-700 transition-colors">
+            <button
+              className="bg-[#4C58F2] text-white py-2 px-6 rounded-lg md:rounded-r-lg md:rounded-l-none hover:bg-blue-700 transition-colors"
+              onClick={handleRedirect}
+            >
               Become a citizen
             </button>
           </div>
