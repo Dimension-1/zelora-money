@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
           {/* Logo with Responsive Sizing */}
           <img
-            src="/Images/Footer/logo.png"
+            src="/Images/Footer/logo1.png"
             alt="Logo"
             className="absolute -top-4 md:static w-40 md:w-60"
           />

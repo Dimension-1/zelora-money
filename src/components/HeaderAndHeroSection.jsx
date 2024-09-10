@@ -20,7 +20,7 @@ const HeaderAndHeroSection = () => {
     <section
       className="bg-cover bg-center text-white min-h-screen relative"
       style={{
-        backgroundImage: `url('/Images/Navbar/Bg.png')`,
+        backgroundImage: `url('/Images/Navbar/Bg2.png')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -33,7 +33,7 @@ const HeaderAndHeroSection = () => {
         <nav className="flex justify-between items-center px-6 pl-0 w-full absolute top-0 z-20"> {/* Added z-index */}
           <div className="text-red-600 text-4xl font-bold">
             <img
-              src="/Images/Navbar/Logo.png"
+              src="/Images/Navbar/Logo2.png"
               alt="Logo"
               className="md:h-48 md:w-48 w-24"
             />
@@ -72,7 +72,7 @@ const HeaderAndHeroSection = () => {
           {/* Mobile menu */}
           <div className="flex lg:hidden items-center space-x-4">
             <button
-              className="bg-[#4C58F2] text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors"
+              className="bg-[#4C58F2] text-xs sm:text-xl text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors"
               onClick={handleRedirect}
             >
               Become a citizen

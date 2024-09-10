@@ -70,7 +70,7 @@ const OurValuesAndStories = () => {
 
           {/* Individual Pillars */}
           <div
-            className="flex flex-col md:flex-row justify-between md:space-x-16 space-y-14 md:space-y-0 items-end"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-16 items-end"
             style={{ fontFamily: "DM Sans, sans-serif" }}
           >
             {/* Pillar 1 */}
@@ -152,7 +152,7 @@ const OurValuesAndStories = () => {
         </div>
 
         {/* Featured Trader Stories */}
-        <div className="bg-[#1A1A1A] p-4 md:p-12 rounded-lg max-w-7xl mb-16">
+        <div className="bg-[#1A1A1A] p-4 md:p-12 rounded-lg max-w-7xl mb-16 items-center justify-center flex flex-col">
           <div className="relative text-center md:mb-16">
             <h2 className="text-md md:text-xl font-normal mb-4">
               FEATURED TRADER STORIES
@@ -163,12 +163,24 @@ const OurValuesAndStories = () => {
           </div>
           <Carousel
             responsive={responsive}
-            infinite={true}
-            showDots={true}
-            autoPlay={true}
+            additionalTransfrom={0}
+            arrows
             autoPlaySpeed={3000}
-            containerClass="w-[380px] sm:w-[600px] md:w-[800px] lg:w-[900px] xl:w-[1055px] "
+            centerMode={false}
+            className=""
+            dotListClass=""
+            draggable
+            focusOnSelect={false}
+            infinite={true}
+            keyBoardControl
+            minimumTouchDrag={80}
+            pauseOnHover
+            renderArrowsWhenDisabled={false}
+            renderButtonGroupOutside={false}
+            renderDotsOutside={false}
+            containerClass="container w-[380px] sm:w-[600px] md:w-[800px] lg:w-[900px] xl:w-[1055px] "
             itemClass="carousel-item flex justify-center items-center"
+            swipeable
           >
             {stories.map((story, index) => (
               <div

@@ -5,7 +5,7 @@ const HeaderAndHeroSection = () => {
     <section
       className="bg-cover bg-center text-white min-h-screen relative"
       style={{
-        backgroundImage: `url('/Images/Navbar/Bg.png')`,
+        backgroundImage: `url('/Images/Navbar/Bg2.png')`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         width: "100vw",
@@ -17,7 +17,7 @@ const HeaderAndHeroSection = () => {
         {/* Left: Logo */}
         <div className="flex flex-1 justify-start items-center">
           <img
-            src="/Images/Navbar/Logo.png"
+            src="/Images/Navbar/Logo2.png"
             alt="Logo"
             className="w-32 md:w-48 h-auto"
           />

@@ -2,16 +2,16 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <section className="py-24 bg-[#070707] text-white relative">
+    <section className="py-16 md:py-24 bg-[#070707] text-white relative">
       <div className="mx-auto flex flex-col md:items-center md:justify-between w-full md:max-w-6xl">
         <div className="flex justify-center px-4 lg:px-0">
           <img
-            src="/Images/About/background-image.png"
+            src="/Images/About/background-image-1.png"
             alt="Background Drawing"
             className="w-full hidden md:block max-w-4xl"
           />
           <img
-            src="/Images/About/background-image-mobile.png"
+            src="/Images/About/background-image-mobile-1.png"
             alt="Background Drawing"
             className="w-full max-w-4xl block md:hidden"
           />
@@ -36,7 +36,7 @@ const AboutSection = () => {
 
           <div className="flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 lg:space-x-8 relative">
             {/* Vertical Line for Mobile */}
-            <div className="block lg:hidden absolute inset-y-0 top-[10%] left-[12%] md:left-[9%] h-[700px] md:h-full w-[2px] bg-[#4C58F2] max-h-full">
+            <div className="block lg:hidden absolute h-[87%] inset-y-0 top-[10%] left-[12%] md:left-[9%] md:h-[700px] md:h-full w-[2px] bg-[#4C58F2] md:max-h-full">
               <div
                 className="absolute right-0 top-[-5px]"
                 style={{
