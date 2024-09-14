@@ -3,6 +3,10 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const OurValuesAndStories = () => {
+  const image = {
+    arrows: "/Images/Stories/Arrows.png",
+    arrowsMobile: "/Images/Stories/arrows-mobile.png",
+  };
   const stories = [
     {
       testimonial:
@@ -10,8 +14,6 @@ const OurValuesAndStories = () => {
       name: "Blessen George",
       title1: "AVP Project Program",
       title2: "Management at StateStreet",
-      arrows: "/Images/Stories/Arrows.png",
-      arrowsMobile: "/Images/Stories/arrows-mobile.png",
       image: "/Images/Stories/blessen-1.png",
       memberSince: "/Images/Stories/memberSince.png",
       speechBubbles: "/Images/Stories/colon.png",
@@ -22,8 +24,6 @@ const OurValuesAndStories = () => {
       name: "Blessen George",
       title1: "AVP Project Program",
       title2: "Management at StateStreet",
-      arrows: "/Images/Stories/Arrows.png",
-      arrowsMobile: "/Images/Stories/arrows-mobile.png",
       image: "/Images/Stories/blessen-1.png",
       memberSince: "/Images/Stories/memberSince.png",
       speechBubbles: "/Images/Stories/colon.png",
@@ -160,6 +160,12 @@ const OurValuesAndStories = () => {
             <h3 className="text-4xl md:text-5xl font-normal mb-12 relative inline-block">
               People Who Grew With Us
             </h3>
+            <img src="/Images/Stories/Arrows.png" alt="Arrows" class="absolute hidden md:block -top-[20px] left-1/2 transform -translate-x-1/2 max-w-2xl" />
+            <img
+              src={image.arrowsMobile}
+              alt="Arrows"
+              className="absolute block md:hidden top-[65px] left-1/2 transform -translate-x-1/2 max-w-2xl"
+            />
           </div>
           <Carousel
             responsive={responsive}

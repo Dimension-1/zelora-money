@@ -24,11 +24,12 @@ const HeaderAndHeroSection = () => {
         </div>
 
         {/* Center: "Coming Soon" Badge */}
-        <div className="absolute top-[10px] left-[35%]">
+        {/* Center: "Coming Soon" Badge */}
+        <div className="absolute top-[30px] left-1/2 transform -translate-x-1/2">
           <img
             src="/Images/Navbar/coming-soon.png"
             alt="Coming Soon"
-            className="h-40 w-auto md:h-48"
+            className="h-32 w-auto md:h-40 lg:h-48"
           />
         </div>
 
@@ -51,7 +52,7 @@ const HeaderAndHeroSection = () => {
               src="/Images/Navbar/underline.png"
               alt="Underline"
               className="absolute right-0 bottom-0 w-[220px] md:w-[220px] md:w-[220px]"
-                style={{ transform: "translateY(20%)" }}
+              style={{ transform: "translateY(20%)" }}
             />
           </span>
         </h1>

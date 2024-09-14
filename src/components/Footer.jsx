@@ -24,9 +24,6 @@ const Footer = () => {
             className="absolute -top-4 md:static w-40 md:w-60"
           />
           <div className="hidden md:flex space-x-4 mt-4">
-            <a href="#" aria-label="Facebook" onClick={handleRedirect}>
-              <img src="/Images/Footer/facebook.png" alt="Facebook" />
-            </a>
             <a href="#" aria-label="Instagram" onClick={handleRedirect}>
               <img src="/Images/Footer/instagram.png" alt="Instagram" />
             </a>
@@ -119,11 +116,6 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="text-gray-700 hover:text-gray-900" onClick={handleRedirect}>
-                  Press Coverage
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-700 hover:text-gray-900" onClick={handleRedirect}>
                   Support
                 </a>
               </li>
@@ -138,9 +130,6 @@ const Footer = () => {
 
         {/* Mobile Social Icons */}
         <div className="md:hidden flex justify-center space-x-4 mt-8">
-          <a href="#" aria-label="Facebook" onClick={handleRedirect}>
-            <img src="/Images/Footer/facebook.png" alt="Facebook" />
-          </a>
           <a href="#" aria-label="Instagram" onClick={handleRedirect}>
             <img src="/Images/Footer/instagram.png" alt="Instagram" />
           </a>

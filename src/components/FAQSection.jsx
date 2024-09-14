@@ -45,7 +45,7 @@ const FAQSection = () => {
           className="flex flex-col md:flex-row items-center justify-center md:space-x-8 mb-8"
           style={{ fontFamily: "DM Sans, sans-serif" }}
         >
-          {["General Queries", "Community Related", "Pricing Plan Related"].map(
+          {["General Queries", "Community Related", "Pricing Plan Related", "Course Related"].map(
             (tab, index) => (
               <button
                 key={index}

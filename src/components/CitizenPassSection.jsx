@@ -5,7 +5,7 @@ const CitizenPassSection = () => {
   const navigate = useNavigate(); // Initialize useNavigate
 
   const handleRedirect = () => {
-    navigate('/coming-soon'); // Redirect to the /coming-soon page
+    window.location.href = 'https://buy.stripe.com/3cs3emcq9fTv0486oU';
   };
   const checkmarkIcon = "/Images/CitizenPass/checkbox.png";
   const addIcon = "/Images/CitizenPass/add.png";
@@ -74,10 +74,13 @@ const CitizenPassSection = () => {
               style={{ fontFamily: "DM Sans, sans-serif" }}
             >
               <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start p-4 md:p-8">
-                <div className="bg-white text-black p-8 rounded-lg shadow-lg mr-0 mb-4 md:mb-0 lg:mr-6">
+                <div className="relative bg-white text-black p-8 rounded-lg shadow-lg mr-0 mb-4 md:mb-0 lg:mr-6">
                   <h3 className="text-base font-light text-[#808080] mb-2">
                     Monthly Plan
                   </h3>
+                  <div className="absolute top-11 right-4 bg-white text-[#E94A41] border border-[#E94A41] py-1 px-4 rounded-lg">
+                    FULL
+                  </div>
                   <p className="text-2xl font-semibold mb-4">$36/month</p>
                   <ul className="space-y-2 mb-8">
                     {[
