@@ -56,14 +56,14 @@ const OurValuesAndStories = () => {
               OUR VALUES
             </h2>
             <div className="relative inline-block">
-              <h3 className="text-5xl font-normal relative z-10">
+              <h3 className="text-5xl font-normal relative z-10" style={{ fontFamily: "RecifeDisplay, sans-serif" }}>
                 The 4 Pillars of Foundation
               </h3>
               {/* Circular Overlay Image */}
               <img
                 src="/Images/Values/overlay.png"
                 alt="Foundation Overlay"
-                className="absolute left-[20%] sm:left-[55%] bottom-0 md:transform w-[60%]  sm:w-[50%] rounded-full"
+                className="absolute left-[20%] sm:left-[53%] bottom-[-10px] md:transform w-[60%] sm:w-[50%] rounded-full"
               />
             </div>
           </div>
@@ -76,7 +76,7 @@ const OurValuesAndStories = () => {
             {/* Pillar 1 */}
             <div className="relative flex flex-col items-center">
               <img
-                src="/Images/Values/icon1.png"
+                src="/Images/Values/icon1-1.png"
                 alt="Learn from the Best"
                 className="absolute top-[-50px] h-auto w-40 z-20"
               />
@@ -95,7 +95,7 @@ const OurValuesAndStories = () => {
             {/* Pillar 2 */}
             <div className="relative flex flex-col items-center">
               <img
-                src="/Images/Values/icon2.png"
+                src="/Images/Values/icon2-1.png"
                 alt="Master the Strategies"
                 className="absolute top-[-55px] h-auto w-40 z-20"
               />
@@ -114,7 +114,7 @@ const OurValuesAndStories = () => {
             {/* Pillar 3 */}
             <div className="relative flex flex-col items-center">
               <img
-                src="/Images/Values/icon3.png"
+                src="/Images/Values/icon3-1.png"
                 alt="Learn at your own pace"
                 className="absolute top-[-110px] h-auto w-36 z-20"
               />
@@ -132,7 +132,7 @@ const OurValuesAndStories = () => {
             {/* Pillar 4 */}
             <div className="relative flex flex-col items-center">
               <img
-                src="/Images/Values/icon4.png"
+                src="/Images/Values/icon4-1.png"
                 alt="Achieve Excellence"
                 className="absolute top-[-70px] h-auto w-44 z-20"
               />
@@ -192,9 +192,10 @@ const OurValuesAndStories = () => {
               <div
                 key={index}
                 className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-4"
+                style={{ fontFamily: "DM Sans, sans-serif" }}
               >
                 <div className="order-2 lg:order-1 flex flex-col justify-center">
-                  <p className="text-xl md:text-2xl lg:text-3xl mb-4 font-light">
+                  <p className="text-xl md:text-2xl lg:text-3xl mb-4 font-extralight">
                     {story.testimonial}
                   </p>
                   <p className="font-semibold text-lg">{story.name}</p>

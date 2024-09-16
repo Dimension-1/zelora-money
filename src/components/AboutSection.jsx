@@ -90,7 +90,7 @@ const AboutSection = () => {
                 <h4 className="text-xl font-semibold mb-2">
                   Online Application
                 </h4>
-                <p className="text-gray-500 mb-4">
+                <p className="text-[#070707] mb-4 font-light">
                   Fill out a quick form to share your trading experience, goals,
                   and why you want to join Fino Club.
                 </p>
@@ -124,7 +124,7 @@ const AboutSection = () => {
                 <h4 className="text-xl font-semibold mb-2">
                   Screening Session
                 </h4>
-                <p className="text-gray-500 mb-4">
+                <p className="text-[#070707] mb-4 font-light">
                   A brief one-on-one call to understand your trading strategies
                   & experience to ensure mutual alignment.
                 </p>
@@ -156,7 +156,7 @@ const AboutSection = () => {
                 style={{ fontFamily: "DM Sans, sans-serif" }}
               >
                 <h4 className="text-xl font-semibold mb-2">Invitation</h4>
-                <p className="text-gray-500 mb-4">
+                <p className="text-[#070707] mb-4 font-light">
                   Receive your exclusive invite to join Fino Club and access our
                   elite trading community.
                 </p>

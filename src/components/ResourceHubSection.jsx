@@ -1,37 +1,10 @@
 import React, { useState } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const ResourceHubSection = () => {
-  const [activeTab, setActiveTab] = useState("Articles"); // State for active tab
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+  const [activeTab, setActiveTab] = useState("Articles");
 
   const articles = [
     {
@@ -55,22 +28,41 @@ const ResourceHubSection = () => {
       time: "11 hours ago",
       featured: true,
     },
-    // Add more articles if needed
+    {
+      image: "/Images/Articles/article1.png",
+      title: "Fintech Industry Faces A Loss In Next 5 Years",
+      source: "Times Of India",
+      time: "11 hours ago",
+      featured: true,
+    },
   ];
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
 
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
 
   const handleRedirect = () => {
-    navigate('/coming-soon'); // Redirect to the /coming-soon page
+    navigate("/coming-soon");
+  };
+
+  const responsive = {
+    superLargeDesktop: { breakpoint: { max: 4000, min: 1024 }, items: 3 },
+    desktop: { breakpoint: { max: 1024, min: 768 }, items: 3 },
+    tablet: { breakpoint: { max: 768, min: 464 }, items: 2 },
+    mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
   };
 
   return (
     <section className="bg-black text-white py-12 md:py-16 px-8 relative">
-      <div className="mx-auto flex flex-col items-start justify-center items-center w-full md:max-w-6xl">
+      <img
+        src="/Images/Resource/hand.png"
+        alt="Hand Icon"
+        className="hidden md:block absolute top-[-50px] right-0 h-auto w-[300px]"
+      />
+
+      <div className="mx-auto flex flex-col items-center justify-center w-full md:max-w-6xl">
         <img
           src="/Images/Resource/hand-mobile.png"
           alt="Hand Icon"
@@ -84,8 +76,11 @@ const ResourceHubSection = () => {
           Find blogs, articles, videos, and tutorials, all for free, to help you
           learn at your own pace and upskill.
         </p>
-        <button className="mb-10 bg-[#4C58F2] hover:bg-blue-700 transition-all duration-300 ease-in-out text-white py-2 px-6 rounded-lg shadow-lg flex items-center justify-center space-x-2">
-          <span style={{ fontFamily: "DM Sans, sans-serif" }} onClick={handleRedirect}>Explore</span>
+        <button
+          className="mb-10 bg-[#4C58F2] hover:bg-blue-700 transition-all duration-300 ease-in-out text-white py-2 px-6 rounded-lg shadow-lg flex items-center justify-center space-x-2"
+          onClick={handleRedirect}
+        >
+          <span style={{ fontFamily: "DM Sans, sans-serif" }}>Explore</span>
           <img
             src="/Images/Icons/ArrowRight.png"
             alt="Arrow Right"
@@ -93,7 +88,6 @@ const ResourceHubSection = () => {
           />
         </button>
 
-        {/* Navigation Tabs */}
         <div
           className="flex justify-center space-x-8 text-lg mb-8"
           style={{ fontFamily: "DM Sans, sans-serif" }}
@@ -121,18 +115,28 @@ const ResourceHubSection = () => {
         </div>
 
         {/* Articles Carousel */}
-        <Slider {...settings} className="w-full">
+        <Carousel
+          responsive={responsive}
+          infinite={true}
+          arrows
+          autoPlaySpeed={3000}
+          draggable
+          swipeable
+          className="mb-8"
+          containerClass="container mx-auto"
+          itemClass="px-4"
+        >
           {articles.map((article, index) => (
-            <div
-              key={index}
-              className="bg-[#1A1A1A] rounded-lg shadow-lg overflow-hidden mx-6"
-            >
+            <div key={index} className="flex flex-col">
               <img
                 src={article.image}
                 alt={article.title}
                 className="w-full h-56 object-cover"
               />
-              <div className="p-6" style={{ fontFamily: "DM Sans, sans-serif" }}>
+              <div
+                className="p-6"
+                style={{ fontFamily: "DM Sans, sans-serif" }}
+              >
                 {article.featured && (
                   <span className="text-sm font-light border px-2 py-1 rounded-lg border-[#E94A41] text-[#E94A41] uppercase mb-2 inline-block">
                     Featured
@@ -145,16 +149,7 @@ const ResourceHubSection = () => {
               </div>
             </div>
           ))}
-        </Slider>
-      </div>
-
-      {/* Hand Image */}
-      <div className="relative overflow-hidden">
-        <img
-          src="/Images/Resource/hand.png"
-          alt="Hand Icon"
-          className="hidden md:block absolute top-[-50px] right-0 h-auto w-[200px]"
-        />
+        </Carousel>
       </div>
     </section>
   );

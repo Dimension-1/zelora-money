@@ -1,11 +1,11 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const CoursesSection = () => {
   const navigate = useNavigate(); // Initialize useNavigate
 
   const handleRedirect = () => {
-    navigate('/coming-soon'); // Redirect to the /coming-soon page
+    navigate("/coming-soon"); // Redirect to the /coming-soon page
   };
   const mentors = [
     {
@@ -42,7 +42,12 @@ const CoursesSection = () => {
             build foundational depth.
           </p>
           <button className="bg-[#4C58F2] hover:bg-blue-700 transition-colors text-white py-3 px-6 rounded-lg flex items-center space-x-2">
-            <span style={{ fontFamily: "DM Sans, sans-serif" }} onClick={handleRedirect}>Explore</span>
+            <span
+              style={{ fontFamily: "DM Sans, sans-serif" }}
+              onClick={handleRedirect}
+            >
+              Explore
+            </span>
             <img
               src="/Images/Icons/ArrowRight.png"
               alt="Arrow Right"
@@ -154,7 +159,10 @@ const CoursesSection = () => {
                   </li>
                 ))}
               </ul>
-              <button className="mt-8 bg-[#4C58F2] hover:bg-blue-700 transition-all duration-300 ease-in-out text-white py-3 px-6 rounded-lg shadow-lg flex items-center justify-center space-x-2" onClick={handleRedirect}>
+              <button
+                className="mt-8 bg-[#4C58F2] hover:bg-blue-700 transition-all duration-300 ease-in-out text-white py-3 px-6 rounded-lg shadow-lg flex items-center justify-center space-x-2"
+                onClick={handleRedirect}
+              >
                 <span>View Details</span>
                 <img
                   src="/Images/Icons/ArrowRight.png"
@@ -184,16 +192,14 @@ const CoursesSection = () => {
                   {mentors.map((mentor, index) => (
                     <div
                       key={index}
-                      className="bg-[#EBEBEB] min-w-[60px] sm:min-w-[100px] p-2 sm:p-4 flex-shrink-0 rounded-lg shadow-md flex flex-col items-center text-center"
+                      className="bg-[#EBEBEB] min-w-[60px] sm:min-w-[60px] pb-2 sm:pb-4 flex-shrink-0 rounded-lg shadow-md flex flex-col items-center text-center"
                     >
-                      <div className="w-16 h-16 sm:w-20 sm:h-20 overflow-hidden rounded-full mb-2 sm:mb-4">
-                        <img
-                          src={mentor.image}
-                          alt={mentor.name}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      <div className="flex flex-col items-center">
+                      <img
+                        src={mentor.image}
+                        alt={mentor.name}
+                        className="object-cover w-[10rem] rounded-t"
+                      />
+                      <div className="flex flex-col items-center pt-4">
                         <p className="font-semibold text-xs sm:text-sm text-black mb-1">
                           {mentor.name}
                         </p>

@@ -11,15 +11,15 @@ const JoinCommunitySection = () => {
       }}
     >
       <div className="mx-auto flex flex-col items-center justify-center w-full md:max-w-6xl">
-        <h2 className="text-4xl max-w-2xl font-normal text-center mb-8">
+        <h2 className="text-4xl max-w-3xl font-normal text-center mb-8">
           Become a part of the fastest growing trading communities of the world
         </h2>
-        <div className="flex items-center w-full max-w-xl">
+        <div className="flex items-center w-full max-w-3xl">
           <div className="flex w-full" style={{fontFamily: "DM Sans, sans-serif"}}>
             <input
               type="email"
               placeholder="Enter your email to receive an invite"
-              className="py-1 md:py-3 px-1 lg:px-2 rounded-l-lg text-black outline-none flex-1"
+              className="py-2 md:py-3 px-1 lg:px-2 rounded-l-lg text-black outline-none flex-1"
               style={{ width: "70%" }}
             />
             <button

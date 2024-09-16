@@ -6,5 +6,12 @@
 
 body {
     font-family: 'RecifeDisplay';
-    overflow-x: hidden;
 }
+
+/* Add this to your CSS file */
+@media (min-width: 1445px) {
+    .bg-custom {
+      background-image: url('/public/Images/Navbar/Bg2.png'); /* Use a larger image for bigger screens */
+    }
+  }
+  

@@ -70,7 +70,7 @@ const CitizenPassSection = () => {
 
             {/* Middle - Pricing Plans */}
             <div
-              className="flex flex-col lg:items-center bg-[#EBEBEB] rounded-b-lg md:rounded-r-lg pb-4"
+              className="flex flex-col lg:items-center bg-[#EBEBEB] rounded-b-lg md:rounded-r-lg pb-8"
               style={{ fontFamily: "DM Sans, sans-serif" }}
             >
               <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start p-4 md:p-8">

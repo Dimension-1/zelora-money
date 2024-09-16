@@ -21,7 +21,7 @@ const CommunityAndCryptoSection = () => {
               />
             </div>
             <div>
-              <h3 className="text-5xl font-light mb-4 text-center">Community</h3>
+              <h3 className="text-5xl font-normal mb-4 text-center">Community</h3>
               <p className="text-lg mb-6 text-center" style={{fontFamily: "DM Sans, sans-serif"}}>
                 Become a part of a community of traders and fintech enthusiasts,
                 learn, network, and grow together!
@@ -52,7 +52,7 @@ const CommunityAndCryptoSection = () => {
           {/* Crypto Card */}
           <div className="bg-[#EBEBEB] py-8 px-4 md:px-16 rounded-lg shadow-lg relative flex flex-col items-center justify-between">
             <div>
-              <h3 className="text-5xl font-light mb-4 text-center">Crypto</h3>
+              <h3 className="text-5xl font-normal mb-4 text-center">Crypto</h3>
               <p className="text-lg mb-6 text-center" style={{fontFamily: "DM Sans, sans-serif"}}>
                 Stay ahead in the volatile world of cryptocurrencies with expert
                 insights, strategic guidance, and the latest trends.

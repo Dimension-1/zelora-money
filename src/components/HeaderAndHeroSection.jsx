@@ -20,7 +20,7 @@ const HeaderAndHeroSection = () => {
     <section
       className="bg-cover bg-center text-white min-h-screen relative"
       style={{
-        backgroundImage: `url('/Images/Navbar/Bg2.png')`,
+        backgroundImage: `url('/Images/Navbar/Bg.png')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
