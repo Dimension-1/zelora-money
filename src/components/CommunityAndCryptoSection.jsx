@@ -70,7 +70,7 @@ const CommunityAndCryptoSection = () => {
                 className="absolute -bottom-24 right:1/2 lg:right-32 z-30 w-[230px] md:w-auto"
               />
             </div>
-            <button
+            {/* <button
   className="mt-8 bg-[#4C58F2] hover:bg-blue-700 transition-all duration-300 ease-in-out text-white py-3 px-6 rounded-lg shadow-lg flex items-center justify-center space-x-2"
   onClick={handleRedirect}
 >
@@ -80,7 +80,7 @@ const CommunityAndCryptoSection = () => {
     alt="Arrow Right"
     className="inline w-4 h-4"
   />
-</button>
+</button> */}
 
             
           </div>
