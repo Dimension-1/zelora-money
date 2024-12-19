@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate , Link } from 'react-router-dom';
 
 const CommunityAndCryptoSection = () => {
   const navigate = useNavigate(); // Initialize useNavigate
@@ -70,14 +70,19 @@ const CommunityAndCryptoSection = () => {
                 className="absolute -bottom-24 right:1/2 lg:right-32 z-30 w-[230px] md:w-auto"
               />
             </div>
-            <button className="mt-8 bg-[#4C58F2] hover:bg-blue-700 transition-all duration-300 ease-in-out text-white py-3 px-6 rounded-lg shadow-lg flex items-center justify-center space-x-2" onClick={handleRedirect}>
-              <span>Explore</span>
-              <img
-                src="/Images/Icons/ArrowRight.png"
-                alt="Arrow Right"
-                className="inline w-4 h-4"
-              />
-            </button>
+            <button
+  className="mt-8 bg-[#4C58F2] hover:bg-blue-700 transition-all duration-300 ease-in-out text-white py-3 px-6 rounded-lg shadow-lg flex items-center justify-center space-x-2"
+  onClick={handleRedirect}
+>
+  <span>Explore</span>
+  <img
+    src="/Images/Icons/ArrowRight.png"
+    alt="Arrow Right"
+    className="inline w-4 h-4"
+  />
+</button>
+
+            
           </div>
         </div>
       </div>
