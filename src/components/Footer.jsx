@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <footer
-      className="bg-[#D9D9D9] py-8 pt-0 md:px-8 relative"
+      className="bg-[#D9D9D9] py-8 pt-2 md:px-8 relative"
       style={{ fontFamily: "DM Sans, sans-serif" }}
     >
       <div className="mx-auto flex flex-col md:flex-row items-center md:justify-between w-full md:max-w-6xl">
@@ -21,9 +21,9 @@ const Footer = () => {
           <img
             src="/Images/Footer/logo1.png"
             alt="Logo"
-            className="absolute -top-4 md:static w-40 md:w-60"
+            className="absolute -top-4 md:static w-24 md:w-40"
           />
-          <div className="hidden md:flex space-x-4 mt-4">
+          {/* <div className="hidden md:flex space-x-4 mt-4">
             <a href="#" aria-label="Instagram" onClick={handleRedirect}>
               <img src="/Images/Footer/instagram.png" alt="Instagram" />
             </a>
@@ -36,8 +36,8 @@ const Footer = () => {
             <a href="#" aria-label="LinkedIn" onClick={handleRedirect}>
               <img src="/Images/Footer/linkedIn.png" alt="LinkedIn" />
             </a>
-          </div>
-        </div>
+          </div> */}
+        </div> 
 
         {/* Footer Links */}
         <div className="grid grid-cols-2 gap-x-8 gap-y-4 md:flex md:space-x-16 w-full md:w-auto md:mt-0 mt-16">
@@ -147,7 +147,7 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="border-t border-[#343434] mt-8 py-6 px-8 text-center text-gray-600">
-        <p>@finoclub2024</p>
+        <p>@zeloraclub2024</p>
       </div>
     </footer>
   );

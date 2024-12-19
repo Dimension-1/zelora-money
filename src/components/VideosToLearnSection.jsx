@@ -19,7 +19,7 @@ const VideosToLearnSection = () => {
               <h3 className="text-4xl font-light mb-2">
                 Learn Trading in 2 weeks with step-by-step guidance
               </h3>
-              <p className="text-[#808080]">By Fino University / 35 mins</p>
+              <p className="text-[#808080]">By zelora University / 35 mins</p>
             </div>
 
             {/* Sidebar Videos */}

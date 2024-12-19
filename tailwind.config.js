@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('/Users/kushanksingh/Downloads/Working repos/fino/public/Images/Navbar/Bg2.png')",
+        'hero-pattern': "url('/Users/kushanksingh/Downloads/Working repos/zelora/public/Images/Navbar/Bg2.png')",
       },
     },
   },

@@ -10,7 +10,7 @@ const CoursesSection = () => {
   const mentors = [
     {
       name: "Chandrakant Sharma",
-      title: "Co-founder Fino",
+      title: "Co-founder zelora",
       experience: "5Y+ Full-time Prop trader",
       image: "/Images/Courses/expert1.png",
     },
@@ -181,14 +181,22 @@ const CoursesSection = () => {
                 />
               </div>
               {/* Mentored by Experts Section */}
-              <div className="bg-[#D9D8D8] p-4 sm:p-6 rounded-2xl">
-                <h4
+              <div className="relative text-center">
+                <img
+                  src="/Images/Courses/demo2.jpg"
+                  alt="View Demo"
+                  className="rounded-lg shadow-lg w-full"
+                />
+              </div>
+              <div>
+                {/* <h4
                   className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 text-left"
                   style={{ fontFamily: "DM Sans, sans-serif" }}
                 >
                   Mentored by Experts
-                </h4>
-                <div className="flex overflow-x-auto scrollbar-hide space-x-4">
+                </h4> */}
+               
+                {/* <div className="flex overflow-x-auto scrollbar-hide space-x-4">
                   {mentors.map((mentor, index) => (
                     <div
                       key={index}
@@ -212,7 +220,7 @@ const CoursesSection = () => {
                       </div>
                     </div>
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

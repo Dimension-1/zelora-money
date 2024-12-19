@@ -10,22 +10,22 @@ const OurValuesAndStories = () => {
   const stories = [
     {
       testimonial:
-        "A close founder friend recommended FinoClub. To be very honest I thought I know everything that FinoClub will teach. But I realised that a lot of things that are so basic were missing in my approach.",
+        "A close founder friend recommended zeloraClub. To be very honest I thought I know everything that zeloraClub will teach. But I realised that a lot of things that are so basic were missing in my approach.",
       name: "Blessen George",
       title1: "AVP Project Program",
       title2: "Management at StateStreet",
       image: "/Images/Stories/blessen-1.png",
-      memberSince: "/Images/Stories/memberSince.png",
+      
       speechBubbles: "/Images/Stories/colon.png",
     },
     {
       testimonial:
-        "A close founder friend recommended FinoClub. To be very honest I thought I know everything that FinoClub will teach. But I realised that a lot of things that are so basic were missing in my approach.",
+        "A close founder friend recommended zeloraClub. To be very honest I thought I know everything that zeloraClub will teach. But I realised that a lot of things that are so basic were missing in my approach.",
       name: "Blessen George",
       title1: "AVP Project Program",
       title2: "Management at StateStreet",
       image: "/Images/Stories/blessen-1.png",
-      memberSince: "/Images/Stories/memberSince.png",
+  
       speechBubbles: "/Images/Stories/colon.png",
     },
     // Add more stories as needed
@@ -215,7 +215,7 @@ const OurValuesAndStories = () => {
                   />
                   <img
                     src={story.memberSince}
-                    alt="Fino Club Member Since 2023"
+                   
                     className="absolute -bottom-8 left-0 h-auto w-44"
                   />
                 </div>

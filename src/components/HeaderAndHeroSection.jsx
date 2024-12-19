@@ -35,7 +35,7 @@ const HeaderAndHeroSection = () => {
             <img
               src="/Images/Navbar/Logo2.png"
               alt="Logo"
-              className="md:h-48 md:w-48 w-24"
+              className="md:h-28 md:w-28 w-20"
             />
           </div>
           <ul
