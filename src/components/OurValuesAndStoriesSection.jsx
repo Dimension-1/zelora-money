@@ -10,7 +10,7 @@ const OurValuesAndStories = () => {
   const stories = [
     {
       testimonial:
-        "A close founder friend recommended zeloraClub. To be very honest I thought I know everything that zeloraClub will teach. But I realised that a lot of things that are so basic were missing in my approach.",
+        "A close founder friend recommended ZeloraMoney. To be very honest I thought I know everything that ZeloraMoney will teach. But I realised that a lot of things that are so basic were missing in my approach.",
       name: "Blessen George",
       title1: "AVP Project Program",
       title2: "Management at StateStreet",
@@ -20,7 +20,7 @@ const OurValuesAndStories = () => {
     },
     {
       testimonial:
-        "A close founder friend recommended zeloraClub. To be very honest I thought I know everything that zeloraClub will teach. But I realised that a lot of things that are so basic were missing in my approach.",
+        "A close founder friend recommended ZeloraMoney. To be very honest I thought I know everything that ZeloraMoney will teach. But I realised that a lot of things that are so basic were missing in my approach.",
       name: "Blessen George",
       title1: "AVP Project Program",
       title2: "Management at StateStreet",

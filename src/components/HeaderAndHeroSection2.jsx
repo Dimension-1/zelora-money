@@ -20,7 +20,7 @@ const HeaderAndHeroSection = () => {
             <img
               src="/Images/Navbar/Logo2.png"
               alt="Logo"
-              className="w-32 md:w-48 h-auto"
+               className="md:h-28 md:w-28 w-20"
             />
           </div>
 

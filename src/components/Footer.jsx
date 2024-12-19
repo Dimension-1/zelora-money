@@ -129,7 +129,7 @@ const Footer = () => {
         </div>
 
         {/* Mobile Social Icons */}
-        <div className="md:hidden flex justify-center space-x-4 mt-8">
+        {/* <div className="md:hidden flex justify-center space-x-4 mt-8">
           <a href="#" aria-label="Instagram" onClick={handleRedirect}>
             <img src="/Images/Footer/instagram.png" alt="Instagram" />
           </a>
@@ -142,12 +142,12 @@ const Footer = () => {
           <a href="#" aria-label="LinkedIn" onClick={handleRedirect}>
             <img src="/Images/Footer/linkedIn.png" alt="LinkedIn" />
           </a>
-        </div>
+        </div> */}
       </div>
 
       {/* Footer Bottom */}
       <div className="border-t border-[#343434] mt-8 py-6 px-8 text-center text-gray-600">
-        <p>@zeloraclub2024</p>
+        <p>@ZeloraMoney2024</p>
       </div>
     </footer>
   );

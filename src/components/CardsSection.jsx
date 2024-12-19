@@ -29,6 +29,7 @@ const CardsSection = () => {
   return (
     <section className="py-12 mx-8">
       <div className="mx-auto flex flex-col items-start text-left md:text-left md:items-start md:justify-between w-full md:max-w-7xl xl:max-w-8xl">
+      
         <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {cardsData.map((card) => (
             <div

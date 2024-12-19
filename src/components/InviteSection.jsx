@@ -1,6 +1,13 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 const RequestInviteSection = () => {
+  
+    const navigate = useNavigate(); // Initialize useNavigate
+  
+    const handleRedirect = () => {
+      navigate('/coming-soon'); // Redirect to the /coming-soon page
+    };
   return (
     <section className="bg-[#E94A41] text-white py-8 px-8">
       <div className="mx-auto flex flex-col md:flex-row items-center md:items-center md:justify-between w-full md:max-w-6xl">
@@ -17,6 +24,7 @@ const RequestInviteSection = () => {
           <button
             className="bg-[#4C58F2] text-white py-1 md:py-3 px-6 rounded-r-lg hover:bg-blue-700 transition-colors"
             style={{ width: "30%" }}
+            onClick={handleRedirect}
           >
             Become a citizen
           </button>

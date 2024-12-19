@@ -30,7 +30,7 @@ const HeaderAndHeroSection = () => {
     >
       <div className="mx-auto flex flex-col items-center justify-center w-full md:max-w-6xl relative h-full">
         {/* Navbar */}
-        <nav className="flex justify-between items-center px-6 pl-0 w-full absolute top-0 z-20"> {/* Added z-index */}
+        <nav className="w-full px-6 py-4 z-10 flex justify-between items-center pl-0  absolute top-0 "> {/* Added z-index */}
           <div className="text-red-600 text-4xl font-bold">
             <img
               src="/Images/Navbar/Logo2.png"

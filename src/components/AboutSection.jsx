@@ -92,7 +92,7 @@ const AboutSection = () => {
                 </h4>
                 <p className="text-[#070707] mb-4 font-light">
                   Fill out a quick form to share your trading experience, goals,
-                  and why you want to join zelora Club.
+                  and why you want to join ZeloraMoney.
                 </p>
                 <p className="text-[#070707]">60 seconds</p>
               </div>
@@ -157,7 +157,7 @@ const AboutSection = () => {
               >
                 <h4 className="text-xl font-semibold mb-2">Invitation</h4>
                 <p className="text-[#070707] mb-4 font-light">
-                  Receive your exclusive invite to join zelora Club and access our
+                  Receive your exclusive invite to join ZeloraMoney and access our
                   elite trading community.
                 </p>
                 <p className="text-[#070707]">Within 48 hours</p>
